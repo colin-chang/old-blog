@@ -4,53 +4,39 @@ title: "ME"
 description: "Hey, this is Colin."
 header-img: "img/about-bg.jpg"
 ---
-
 <div class="zh post-container">
     <h3>致青春</h3>
     <blockquote>
-        从明天起，做一个幸福的人，
-        喂马劈柴，周游世界。
+        从明天起，做一个幸福的人， 喂马劈柴，周游世界。
     </blockquote>
-    人生啊就是充满了错过，充满了各种遗憾，所以它才变得五彩斑斓。你想结婚时我一心创业，我想结婚时你又忙于工作，我们两个人啊，一直都没走远却一直都在错过。聚散都是缘，也许这就是命中注定。我们做朋友吧，交心的朋友，无话不谈的朋友，听说女孩子美其名曰男闺蜜，闺蜜发微信你可是满面笑容然后秒回的，挺好。如果你遇到困难，告诉我，我永远是第一个站在你身后的人。
-    <br><br>
-    你几乎是我全部的青春，我曾经深爱过你。现在我选择把你潜藏在心底，或许会不经意的再想起你，我想我不会再有心痛的感觉，有的只是真心的祝福。祝愿你，一生幸福，我心爱的姑娘。 
-    <br><br>
-    “您现在每月工资有多少？肾5S拿到了吗？”在店里，库克关切地向果粉们问起这一问题。当听说果粉们排到了5S，库克满意地连连点头。接着他指出，近年来苹果事业发展取得巨大成就，特别是iPhone影响剧增，老百姓对iOS满意度逐步提高，在这个转变过程中，果粉的辛勤工作功不可没。
-    <br><br>
-    好感激，在生命中最好的年纪遇见你。<br><br>
-	好幸运，在最美好的时光里与你一起。<br><br>
-	好可惜，在快到终点的时候失去了你。<br><br>
-	谢谢你，出现在我的生命里，给我鼓励，给我勇气，让我学会勇敢的面对人生的难。<br><br>
-	
-	爱过就是一生一世！
-    <p style="text-align:right;">
-        —— <a href="http://www.zhihu.com/question/19687065">Colin</a>
+    <p>
+        人生啊就是充满了错过，充满了各种遗憾，所以它才变得五彩斑斓。你想结婚时我一心创业，我想结婚时你又忙于工作，我们两个人啊，一直都没走远却一直都在错过。聚散都是缘，也许这就是命中注定。我们做朋友吧，交心的朋友，无话不谈的朋友，听说女孩子美其名曰男闺蜜，闺蜜发微信你可是满面笑容然后秒回的，挺好。如果你遇到困难，告诉我，我永远是第一个站在你身后的人。
     </p>
+    <p>
+        你几乎是我全部的青春，我曾经深爱过你。现在我选择把你潜藏在心底，或许会不经意的再想起你，我想我不会再有心痛的感觉，有的只是真心的祝福。祝愿你，一生幸福，我心爱的姑娘。
+    </p>
+    <p>好感激，在生命中最好的年纪遇见你。</p>
+    <p>好幸运，在最美好的时光里与你一起。</p>
+    <p>好可惜，在快到终点的时候失去了你。</p>
+    <p>谢谢你，出现在我的生命里，给我鼓励，给我勇气，让我学会勇敢的面对人生的难。</p>
 
+    爱过就是一生一世！
+    <p class="text-right">
+        —— <a href="https://www.facebook.com/colin.chang.125">Colin</a>
+    </p>
 </div>
-
-
 {% if site.duoshuo_username %}
 <!-- 多说评论框 start -->
 <div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
-
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
+    <div class="ds-thread" data-thread-key="{{site.duoshuo_username}}/about" data-title="{{page.title}}" data-url="{{site.url}}/about/"></div>
 </div>
 <!-- 多说评论框 end -->
 
 <!-- Duoshuo hacking -->
-<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}" />
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    // dynamic User hacking by Hux
     var _user = document.getElementById('dsUser').value;
     // duoshuo comment query.
     var duoshuoQuery = {short_name: _user };
@@ -64,10 +50,7 @@ header-img: "img/about-bg.jpg"
     })();
 </script>
 <!-- 多说公共JS代码 end -->
-{% endif %}
-
-
-{% if site.disqus_username %}
+{% endif %} {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">

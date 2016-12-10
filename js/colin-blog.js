@@ -1,9 +1,3 @@
-/*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
- * Copyright 2015 Start Bootstrap
- * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 // Tooltip Init
 $(function() {
     $("[data-toggle='tooltip']").tooltip();
@@ -12,7 +6,7 @@ $(function() {
 
 // make all images responsive
 /* 
- * Unuse by Hux
+ * Unuse
  * actually only Portfolio-Pages can't use it and only post-img need it.
  * so I modify the _layout/post and CSS to make post-img responsive!
  */
