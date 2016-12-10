@@ -58,9 +58,8 @@ duoshuo_share: true            # set to false if you want to use Comment without
 # Baidu Analytics
 ba_track_id: a1d32a45a7ababf6b346a0120f58ac16
 # Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
-
+ga_track_id: 'UA-88772950-1'            # Format: UA-xxxxxx-xx
+ga_domain: colin-chang.site
 
 
 # Sidebar settings
