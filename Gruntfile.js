@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
@@ -29,9 +29,9 @@ module.exports = function(grunt) {
             }
         },
         banner: '/*!\n' +
-            ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' */\n',
+        ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+        ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+        ' */\n',
         usebanner: {
             dist: {
                 options: {
@@ -41,6 +41,30 @@ module.exports = function(grunt) {
                 files: {
                     src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
                 }
+            }
+        },
+        htmlmin: { 
+            dist: { 
+                options: {
+                    removeCommentsFromCDATA: true,  
+                    removeComments: true,  
+                    collapseWhitespace: true,  
+                    collapseBooleanAttributes: true,  
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,  
+                    useShortDoctype: true,
+                    removeEmptyAttributes: true,  
+                    removeOptionalTags: true
+                },
+                files: [{  
+                    expand: true,  
+                    src: [ 
+                        '_site/*.html',
+                        '_site/**/*.html',
+                        '_site/**/**/**/**/*.html',
+                        ],
+                    dest: ''
+                }]
             }
         },
         watch: {
@@ -66,7 +90,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    grunt.registerTask('default', ['uglify', 'less', 'usebanner','htmlmin']);
 };
