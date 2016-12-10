@@ -4,21 +4,20 @@ SEOTitle: Colin‘s Blog | Colin.Chang
 header-img: img/home-bg.jpg
 email: colinchang.zc@gmail.com
 description: "这里是Colin Chang的个人博客，与你一起发现更大的世界。"
-keyword: "Colin Chang,张成,Colin Blog,个人网站,互联网, 前端,软件开发,产品"
-url: "http://chanyikeji.com"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+keyword: "Colin Chang,Colin Blog,张成,个人网站,互联网,前端,软件开发,产品"
+url: "http://colin-chang.site"              # your host, for absolute URL
+baseurl: ""                       # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-#weibo_username:     zhangcheng5468
-#zhihu_username:     zhangcheng5468
+# weibo_username:     zhangcheng5468
+# zhihu_username:     zhangcheng5468
 github_username:    colin-chang
-twitter_username:   Colin_Chang_ZC
-facebook_username:  Colin Chang
-# linkedin_username:  firstname-lastname-idxxxx
-
+twitter_username:   colin_chang_zc
+facebook_username:  colin.chang.125
+linkedin_username:  colin-chang
 
 
 # Build settings
@@ -46,14 +45,13 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 
-
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: colin
+duoshuo_username: colin-chang
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: true            # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings
