@@ -4,7 +4,7 @@ title:      "MarkDown基础语法"
 subtitle:   "快速构架丰富多彩的多媒体文档，从此文档熠熠生辉"
 date:       2016-12-10 18:40:00
 author:     "Colin"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/2016/post-bg-markdown-grammar.jpg"
 tags:
     - MarkDown
     - 其他
