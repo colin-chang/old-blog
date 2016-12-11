@@ -56,3 +56,4 @@ tags:
 海<br>
 海的故事…
 ![me](/img/2016/in-post/bythesea/me.jpg)
+<audio src="http://link.hhtjim.com/163/32785706.mp3" autoplay loop controls></audio>
