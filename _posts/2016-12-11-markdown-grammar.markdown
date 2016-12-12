@@ -2,12 +2,11 @@
 layout:     post
 title:      "MarkDown基础语法"
 subtitle:   "快速构架丰富多彩的多媒体文档，从此文档熠熠生辉"
-date:       2016-12-10 18:40:00
+date:       2016-12-11 18:40:00
 author:     "Colin"
 header-img: "img/2016/bg-post/markdown-grammar.jpg"
 tags:
-    - MarkDown
-    - 其他
+    - 高效工作
 ---
 
 > "Markdown 是一种轻量级的「标记语言」"
