@@ -48,12 +48,12 @@ tags:
                 </tbody>     
             </table>                
         </div>
-    </div>
-    ```
+    </div>```
 
     2) 把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
 
     *伪代码：*
+
     ```js
     $('.table-main').scroll(function() {
         var scrollLeft = $(this).scrollLeft();
@@ -66,6 +66,7 @@ tags:
 ![同时冻结行列表格层叠图](/img/2016/in-post/freezedtable/structure-2.png)
     
     *伪代码：*
+
     ```html
         <div class="table-out">
             <!--固定行-->
@@ -126,6 +127,7 @@ tags:
     2) 把四个table固定好了之后，监听table-main的滚动，用table-main的滚动带动table-top的左右移动和table-left的上下移动。在这个示例里，我对table-left用到了绝对定位，所以给table-left设定scroll无效，但是可以使用改变table-left的css中top的属性值来使得table-left上下移动。
     
     *伪代码：*
+
     ``` js
     var tb=$('.table-out');
 	var tbLeft=tb.children('.table-left');
