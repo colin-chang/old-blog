@@ -30,6 +30,7 @@ tags:
     1) 把看起来是一个整体的表格拆分成两部分，table1负责固定部分如thead，而table2负责可以拖动的部分如tbody。
 ![冻结行(列)表格层叠图](/img/2016/in-post/freezedtable/structure-1.png)
     *伪代码：*
+    
     ``` html
     <div class="table-out">
         <div class="table-top">
