@@ -56,12 +56,12 @@ tags:
 
     *伪代码：*
     
-``` js
-$('.table-main').scroll(function() {
-    var scrollLeft = $(this).scrollLeft();
-    $('.table-top').scrollLeft(scrollLeft);
-});
-```
+    ``` js
+    $('.table-main').scroll(function() {
+        var scrollLeft = $(this).scrollLeft();
+        $('.table-top').scrollLeft(scrollLeft);
+    });
+    ```
 
 2. 同时冻结行和列
 
