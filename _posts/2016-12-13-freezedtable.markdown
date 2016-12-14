@@ -25,12 +25,12 @@ tags:
 *网上流传较多的第二种方式的案例，多存在问题，我们在此以轻量级代码简述第一种实现方式，足以应对一般需求。*
 
 ##### 表格层叠方式
-1. 冻结某一行（列）
+###### 1. 冻结某一行（列）
 
-    1.1 把看起来是一个整体的表格拆分成两部分，table1负责固定部分如thead，而table2负责可以拖动的部分如tbody。
+1）把看起来是一个整体的表格拆分成两部分，table1负责固定部分如thead，而table2负责可以拖动的部分如tbody。
 ![冻结行(列)表格层叠图](/img/2016/in-post/freezedtable/structure-1.png)
 
-    *伪代码：*
+*伪代码：*
 ``` html
 <div class="table-out">
     <div class="table-top">
@@ -51,10 +51,9 @@ tags:
 </div>
 ```
 
-1.2 把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
+2）把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
 
 *伪代码：*
-
 ``` js
 $('.table-main').scroll(function() {
     var scrollLeft = $(this).scrollLeft();
@@ -62,13 +61,12 @@ $('.table-main').scroll(function() {
 });
 ```
 
-2. 同时冻结行和列
+###### 2. 同时冻结行和列
 
-2.1 把看起来是一个整体的表格拆分成四个部分
+1） 把看起来是一个整体的表格拆分成四个部分
 ![同时冻结行列表格层叠图](/img/2016/in-post/freezedtable/structure-2.png)
     
 *伪代码：*
-
 ``` html
 <div class="table-out">
     <!--固定行-->
@@ -126,7 +124,7 @@ $('.table-main').scroll(function() {
 </div>
 ```
 
-2.2 把四个table固定好了之后，监听table-main的滚动，用table-main的滚动带动table-top的左右移动和table-left的上下移动。在这个示例里，我对table-left用到了绝对定位，所以给table-left设定scroll无效，但是可以使用改变table-left的css中top的属性值来使得table-left上下移动。
+2）把四个table固定好了之后，监听table-main的滚动，用table-main的滚动带动table-top的左右移动和table-left的上下移动。在这个示例里，我对table-left用到了绝对定位，所以给table-left设定scroll无效，但是可以使用改变table-left的css中top的属性值来使得table-left上下移动。
 
 *伪代码：*
 
