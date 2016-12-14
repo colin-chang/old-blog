@@ -69,61 +69,62 @@ $('.table-main').scroll(function() {
 ![同时冻结行列表格层叠图](/img/2016/in-post/freezedtable/structure-2.png)
     
 *伪代码：*
+
 ``` html
-    <div class="table-out">
-        <!--固定行-->
-        <div class="table-top">
-            <table>
-                <thead>
-                    <tr>
-                        <th>零件名称</th>
-                        <th>换件日期</th>
-                        <th>寿命比例</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <!--内容-->
-        <div class="table-main">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>电机</td>
-                        <td>2015-08-25</td>
-                        <td>
-                            <progress value="0.6"></progress>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>蝶型弹簧</td>
-                        <td>2015-08-25</td>
-                        <td>
-                            <progress value="0.4"></progress>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--固定列-->
-        <div class="table-left">
-            <table>
-                <tbody>
-                    <tr><td>电机</td></tr>
-                    <tr><td>蝶型弹簧</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <!--左上角交叉区-->
-        <div class="table-left-top">
-            <table>
-                <thead>
-                    <tr>
-                        <th>备件名称</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
+<div class="table-out">
+    <!--固定行-->
+    <div class="table-top">
+        <table>
+            <thead>
+                <tr>
+                    <th>零件名称</th>
+                    <th>换件日期</th>
+                    <th>寿命比例</th>
+                </tr>
+            </thead>
+        </table>
     </div>
+    <!--内容-->
+    <div class="table-main">
+        <table>
+            <tbody>
+                <tr>
+                    <td>电机</td>
+                    <td>2015-08-25</td>
+                    <td>
+                        <progress value="0.6"></progress>
+                    </td>
+                </tr>
+                <tr>
+                    <td>蝶型弹簧</td>
+                    <td>2015-08-25</td>
+                    <td>
+                        <progress value="0.4"></progress>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--固定列-->
+    <div class="table-left">
+        <table>
+            <tbody>
+                <tr><td>电机</td></tr>
+                <tr><td>蝶型弹簧</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <!--左上角交叉区-->
+    <div class="table-left-top">
+        <table>
+            <thead>
+                <tr>
+                    <th>备件名称</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
 ```
 
 2.2 把四个table固定好了之后，监听table-main的滚动，用table-main的滚动带动table-top的左右移动和table-left的上下移动。在这个示例里，我对table-left用到了绝对定位，所以给table-left设定scroll无效，但是可以使用改变table-left的css中top的属性值来使得table-left上下移动。
