@@ -31,6 +31,7 @@ tags:
     ![冻结行(列)表格层叠图](/img/2016/in-post/freezedtable/structure-1.png)
 
     *伪代码：*
+    
     ``` html
     <div class="table-out">
         <div class="table-top">
