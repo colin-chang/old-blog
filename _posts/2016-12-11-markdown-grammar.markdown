@@ -146,11 +146,13 @@ cond(no)->op
 ```
 
 *时序图：*
+
 ```sequence
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
+
 *公式：*
 
  可以创建行内公式 
