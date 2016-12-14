@@ -32,25 +32,25 @@ tags:
 
     *伪代码：*
 
-    ``` html
-    <div class="table-out">
-        <div class="table-top">
-            <table>
-                <thead>
-                    <tr><th>姓名</th><th>学号</th><th>年龄</th></tr>
-                </thead>
-            </table>
-        </div>
-        <div class="table-main">
-            <table>
-                <tbody>
-                    <tr><td>张三</td><td>001</td><td>17</td></tr> 
-                    <tr><td>李四</td><td>002</td><td>18</td></tr> 
-                </tbody>     
-            </table>                
-        </div>
+``` html
+<div class="table-out">
+    <div class="table-top">
+        <table>
+            <thead>
+                <tr><th>姓名</th><th>学号</th><th>年龄</th></tr>
+            </thead>
+        </table>
     </div>
-    ```
+    <div class="table-main">
+        <table>
+            <tbody>
+                <tr><td>张三</td><td>001</td><td>17</td></tr> 
+                <tr><td>李四</td><td>002</td><td>18</td></tr> 
+            </tbody>     
+        </table>                
+    </div>
+</div>
+```
 
     2) 把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
 
