@@ -30,8 +30,8 @@ tags:
     1) 把看起来是一个整体的表格拆分成两部分，table1负责固定部分如thead，而table2负责可以拖动的部分如tbody。
 ![冻结行(列)表格层叠图](/img/2016/in-post/freezedtable/structure-1.png)
     *伪代码：*
-    
-    ``` html
+
+    ```html
     <div class="table-out">
         <div class="table-top">
             <table>
@@ -54,7 +54,7 @@ tags:
     2) 把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
 
     *伪代码：*
-    ``` js
+    ```js
     $('.table-main').scroll(function() {
         var scrollLeft = $(this).scrollLeft();
         $('.table-top').scrollLeft(scrollLeft);
@@ -66,7 +66,7 @@ tags:
 ![同时冻结行列表格层叠图](/img/2016/in-post/freezedtable/structure-2.png)
     
     *伪代码：*
-    ``` html
+    ```html
         <div class="table-out">
             <!--固定行-->
             <div class="table-top">
