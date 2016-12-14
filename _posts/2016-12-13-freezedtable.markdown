@@ -56,6 +56,7 @@ tags:
 2）把两个table固定好了之后，监听table2的滚动，用table2的滚动带动table1的滚动（通过设置css里的left 或者 scroll，如果是绝对定位那么只能用设定css中left的方法）
 
 *伪代码：*
+
 ``` js
 $('.table-main').scroll(function() {
     var scrollLeft = $(this).scrollLeft();
@@ -142,7 +143,7 @@ tbMain.scroll(function() {
     tbLeft.css('top',leftTop - tbMain.scrollTop()+'px');
     tbTop.scrollLeft(tbMain.scrollLeft());
 });
-```
+``` 
 
 *效果图：*
 <iframe src="/res/freezedtable.html" style="border:0;width:100%;height:355px;"></iframe>
