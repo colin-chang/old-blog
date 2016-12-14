@@ -136,7 +136,7 @@ markdown中表格语法简单但书写略繁琐，一行内列之间通过 \| �
 
 *流程图：*
 
-```flow
+``` flow
 st=>start: Start
 e=>end
 op=>operation: My Operation
@@ -149,7 +149,7 @@ cond(no)->op
 
 *时序图：*
 
-```sequence
+``` sequence
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
