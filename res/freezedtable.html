@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>table首行首列固定</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="" rel="stylesheet">
+</head>
+<style type="text/css">
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	th,
+	td {
+		margin: 0;
+		padding: 0;
+	}
+	
+	td {
+		outline: none;
+	}
+	
+	.table-out {
+		position: relative;
+		height: 333px;
+		width: 600px;
+		border: 1px solid #cacbcc;
+		border-bottom: 1px solid #cacbcc;
+		overflow: hidden;
+		border-top: 1px solid #cacbcc;
+	}
+	
+	.table-top {
+		overflow: hidden;
+	}
+	
+	.table-top th,
+	.table-left-top th {
+		height: 50px;
+		color: #8a9399;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: #fafafa;
+		border-bottom: 1px solid #cacbcc;
+	}
+	
+	.table-top th:not(:last-child) {
+		border-right: 1px solid #e3e5e6;
+	}
+	
+	.width-100 {
+		width: 100px;
+		min-width: 100px;
+	}
+	
+	.width-200 {
+		width: 200px;
+		min-width: 200px;
+	}
+	
+	.table-main {
+		overflow: scroll;
+		border-top: none;
+		position: relative;
+		height: 281px;
+	}
+	
+	.table-main td,
+	.table-left td,
+	.table-left-top td {
+		text-align: center;
+		height: 40px;
+		color: #2e3133;
+	}
+	
+	.table-main tr:not(:last-child),
+	.table-left tr:not(:last-child) {
+		border-bottom: 1px solid #e3e5e6;
+	}
+	
+	.table-main td:not(:last-child),
+	.table-left td,
+	.table-left-top td {
+		border-right: 1px solid #e3e5e6;
+	}
+	
+	.table-left {
+		display: inline-block;
+		position: absolute;
+		top: 51px;
+		background-color: #fff;
+		left: 1px;
+	}
+	
+	.table-left-top {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		background-color: #ccc;
+		left: 1px;
+	}
+	
+	.table-left-top th {
+		border-right: 1px solid #e3e5e6;
+		border-bottom: 1px solid #cacbcc;
+	}
+</style>
+
+<body>
+	<div class="table-out">
+		<!--固定行-->
+		<div class="table-top">
+			<table>
+				<thead>
+					<tr>
+						<th class="width-100">序号</th>
+						<th class="width-100">备件</th>
+						<th class="width-200">换件日期</th>
+						<th class="width-200">寿命比例</th>
+						<th class="width-200">规格型号</th>
+						<th class="width-200" style="min-width:220px;width:220px;">理论寿命</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<!--内容-->
+		<div class="table-main">
+			<table>
+				<tbody>
+					<tr class="light-bg">
+						<td class="width-100">1</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr>
+						<td class="width-100">2</td>
+						<td class="width-100">蝶型弹簧</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">3</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr>
+						<td class="width-100">4</td>
+						<td class="width-100">蝶型弹簧</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">5</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr>
+						<td class="width-100">6</td>
+						<td class="width-100">蝶型弹簧</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">7</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr>
+						<td class="width-100">8</td>
+						<td class="width-100">蝶型弹簧</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">9</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr>
+						<td class="width-100">10</td>
+						<td class="width-100">蝶型弹簧</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">11</td>
+						<td class="width-100">电机</td>
+						<td class="width-200">2015-08-25</td>
+						<td class="width-200">
+							<progress value="0.6"></progress>
+						</td>
+						<td class="width-200">XL2D</td>
+						<td class="width-200">6个月</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--固定列-->
+		<div class="table-left">
+			<table>
+				<tbody>
+					<tr class="light-bg">
+						<td class="width-100">1</td>
+						<td class="width-100">电机</td>
+					</tr>
+					<tr>
+						<td class="width-100">2</td>
+						<td class="width-100">蝶型弹簧</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">3</td>
+						<td class="width-100">电机</td>
+					</tr>
+					<tr>
+						<td class="width-100">4</td>
+						<td class="width-100">蝶型弹簧</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">5</td>
+						<td class="width-100">电机</td>
+					</tr>
+					<tr>
+						<td class="width-100">6</td>
+						<td class="width-100">蝶型弹簧</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">7</td>
+						<td class="width-100">电机</td>
+					</tr>
+					<tr>
+						<td class="width-100">8</td>
+						<td class="width-100">蝶型弹簧</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">9</td>
+						<td class="width-100">电机</td>
+					</tr>
+					<tr>
+						<td class="width-100">10</td>
+						<td class="width-100">蝶型弹簧</td>
+					</tr>
+					<tr class="light-bg">
+						<td class="width-100">11</td>
+						<td class="width-100">电机</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--左上角交叉区-->
+		<div class="table-left-top">
+			<table>
+				<thead>
+					<tr>
+						<th class="width-100">序号</th>
+						<th class="width-100">备件</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	var tb=$('.table-out');
+	var tbLeft=tb.children('.table-left');
+	var tbTop=tb.children('.table-top');
+	var tbMain=tb.children('.table-main');
+
+    var leftTop = parseInt(tbLeft.css('top'));
+    tbMain.scroll(function() {		
+        tbLeft.css('top',leftTop - tbMain.scrollTop()+'px');
+        tbTop.scrollLeft(tbMain.scrollLeft());
+    });
+</script>
+</body>
+
+</html>
