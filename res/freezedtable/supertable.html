@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>锁定表格行列</title>
+    <link rel="stylesheet" href="supertables.css">
+</head>
+<body>
+<table id="tb">
+    <tr>
+        <th>序号</th>
+        <th>备件</th>
+        <th>换件日期</th>
+        <th>寿命比例</th>
+        <th>规格型号</th>
+        <th>理论寿命</th>
+    </tr>
+    <tr class="light-bg">
+        <td>1</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>蝶型弹簧</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr class="light-bg">
+        <td>3</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>蝶型弹簧</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr class="light-bg">
+        <td>5</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>蝶型弹簧</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr class="light-bg">
+        <td>7</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>蝶型弹簧</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr class="light-bg">
+        <td>9</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>蝶型弹簧</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+    <tr class="light-bg">
+        <td>11</td>
+        <td>电机</td>
+        <td>2015-08-25</td>
+        <td>
+            <progress value="0.6"></progress>
+        </td>
+        <td>XL2D</td>
+        <td>6个月</td>
+    </tr>
+</table>
+<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="supertable.js"></script>
+<script>
+    (function () {
+        'use strict';
+        $("#tb").toSuperTable({width: "332px", height: "208px", fixedCols: 2});
+    })();
+</script>
+</body>
+
+</html>
