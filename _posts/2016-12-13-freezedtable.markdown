@@ -53,7 +53,7 @@ tags:
 
 *伪代码：*
 
-``` js
+``` javascript
 $('.table-main').scroll(function() {
     var scrollLeft = $(this).scrollLeft();
     $('.table-top').scrollLeft(scrollLeft);
@@ -128,7 +128,7 @@ $('.table-main').scroll(function() {
 
 *伪代码：*
 
-``` js
+``` javascript
 var tb=$('.table-out');
 var tbLeft=tb.children('.table-left');
 var tbTop=tb.children('.table-top');
@@ -155,6 +155,7 @@ tbMain.scroll(function() {
 原理与前面说的相同，这里我们不再赘述。直接上代码了。如果代码不完整，后面附有完整案例的下载链接，大家可以下载研究。
 
 *完整Html代码：*
+
 ``` html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -295,7 +296,9 @@ tbMain.scroll(function() {
 </body>
 </html>
 ```
+
 *supertables.css：*
+
 ``` css
 .sBase {
 	position: relative;
@@ -459,7 +462,9 @@ tbMain.scroll(function() {
 	background-color: #333333;
 }
 ```
+
 *supertable.js：*
+
 ``` javascript
 (function ($) {
     //声明superTable
