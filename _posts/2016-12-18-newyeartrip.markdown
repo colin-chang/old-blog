@@ -142,3 +142,4 @@ tags:
 后续推出，敬请期待…
 
 <audio src="http://link.hhtjim.com/163/125517.mp3" controls autoplay loop></audio>
+<script>window.addEventListener('load',function(){$('table').addClass('table-responsive').addClass('table-striped').addClass('table-hover')})</script>
