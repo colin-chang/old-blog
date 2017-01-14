@@ -6,7 +6,8 @@ date:       2017-01-12 17:00:00
 author:     "Colin"
 header-img: "img/2016/bg-post/markdown-grammar.jpg"
 tags:
-    - 前端开发 Canvas
+    - 前端开发
+    - Canvas
 ---
 
 > "源自专家经验库的灵感设计"
