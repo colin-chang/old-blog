@@ -18,11 +18,13 @@ tags:
 　　When Ted's best friend Marshall proposes to his girlfriend, Lily, Ted realizes he'd better get a move on if he hopes to find true love. Ted soon meets Robin (Cobie Smulders) in a neighborhood bar, immediately becomes smitten and scores a first date. But when Ted can hardly wait to see her again, his eagerness threatens to scare her away.
 
 ## Lines
-```
+<link rel="stylesheet" href="/css/himym/common.css">
+<figure class="highlight">
+<pre>
 2030年
 
 孩子们，我要给你们讲一个美好的故事
-Kids, I'm gonna tell you an incredible story.
+Kids, I'm gonna tell you an <abbr title="adj. 难以置信的，惊人的">incredible</abbr> story.
 
 是关于我和你们母亲相遇的故事
 the story of how I met your mother.
@@ -157,7 +159,7 @@ You know, ever since college it's been Marshal and Lily and me.
 
 而以后就会变成
 Marshel和Lily……和我
-Now it's going to be Marshal and Lily, and me.
+Now it's gonna be Marshal and Lily, and me.
 
 他们就要结婚，成家了
 They'll get married, start a family.
@@ -174,7 +176,7 @@ I see what this is about.
 Have you forgotten what I said to you the night we met?
 
 Ted，我来教你怎么享受生活
-Ted, I'm going to teach you how to live.
+Ted, I'm gonna teach you how to live.
 
 我是Barney，我们刚在小便池边认识的
 Barney. We met at the urinal.
@@ -279,7 +281,7 @@ Marshal was in the second year of law school, so he was pretty good at thinking 
 And that's all of them!
 
 我该去……做饭了
-I'm going to go cook.
+I'm gonna go cook.
 
 我真的很为Marshal感到高兴
 我只是无法想象现在就成家立业
@@ -302,7 +304,7 @@ simple ceremony, we are better on vows.
 
 乐队，不要DJ，人们各跳各的
 我才懒得管呢
-band, no DJ, people will dance. I'm not going to worry about it.
+band, no DJ, people will dance. I'm not gonna worry about it.
 
 见鬼，Marshal干嘛这么早订婚
 Damn it! Why did Marshal have to get engaged!
@@ -426,7 +428,7 @@ It was like something from an old movie,
 with a sailor sees the girl across the crowded dance floor, turns to his buddy, and says, 'see that girl? 
 
 “总有一天我会娶到她”
-I'm going to marry her some day.'
+I'm gonna marry her some day.'
 
 -Barney，瞧见那姑娘了吗？
 -哦，是的，性感身段
@@ -442,7 +444,7 @@ I'm going to marry her some day.'
 I need a plan.
 
 我要等到她上洗手间的时候……
-I'm going to wait until she goes to the bathroom.
+I'm gonna wait until she goes to the bathroom.
 
 再偷偷给她点一杯饮料……
 I'll strategically place myself by the jukebox...
@@ -533,7 +535,7 @@ It does look fun in the movies.
 Hey, you want to have dinner with me Saturday night?
 
 我周五要去Orlando一个星期
-Oh, I can't. I'm going to Orlando for a week on Friday.
+Oh, I can't. I'm gonna Orlando for a week on Friday.
 
 有个人要做一个世界上最大的蛋糕
 我要负责这个报导
@@ -541,8 +543,8 @@ Some guy's attempting to make the world's biggest pancake. Guess who's covering 
 
 -这能报导一个星期？
 -是的，他还会把蛋糕吃掉，这也是个世界纪录
--That's going to take a week?
--Yes. He's going to eat it, too. That's another record.
+-That's gonna take a week?
+-Yes. He's gonna eat it, too. That's another record.
 
 怎么回事那么久？
 Hey, what's taking so long?
@@ -572,7 +574,7 @@ We're going out tomorrow night.
 I thought we were playing laser attack tomorrow night!
 
 没错，不过我从没打算玩激光枪大战
-Yeah, I was never going to play laser attack.
+Yeah, I was never gonna play laser attack.
 
 第二天，我带她去了一家Brooklyn的小酒馆
 The next night, I took her out to this little in Brooklyn.
@@ -775,7 +777,7 @@ you're still not waring a suit!
 She didn't even give me the signal.
 
 那又怎样，难道她得用眼睛眨莫尔斯码？
-What? Is she going to bat her eyes at you in Morse code?
+What? Is she gonna bat her eyes at you in Morse code?
 
 “Ted……吻我”
 'Ted, kiss me.'
@@ -796,7 +798,7 @@ I didn't. I swear.
 
 至少我知道Marshal和我之间是不可能的
 今晚可以睡个安稳觉
-At least tonight I get to sleep knowing Marshal and me, never going to happen.
+At least tonight I get to sleep knowing Marshal and me, never gonna happen.
 
 你本该吻她
 You should have kissed her.
@@ -837,7 +839,7 @@ Reporting from Metro 1 News ...
 Didn't jump.
 
 我现在就去吻她
-I'm going to kiss her.
+I'm gonna kiss her.
 
 现在就去
 Right now.
@@ -851,7 +853,7 @@ Dude, it's midnight. As your future lawyer I might advice you that's freaking cr
 I never do anything crazy. I'm always waiting for the moment, planning the moment.
 
 她明天就走，这也许是我最后的机会了
-She's leaving tomorrow. This maybe the only chance I'm going to get.
+She's leaving tomorrow. This maybe the only chance I'm gonna get.
 
 我要做那个人做不到的
 我要吻那一双唇！（与跳下去谐音）
@@ -922,7 +924,7 @@ OK, the moment of truth.
 Wish me luck.
 
 Ted要和一个电视台记者搞上了
-Ted's going to get it on a with a TV reporter.
+Ted's gonna get it on a with a TV reporter.
 
 “为您现场报道，爽啊爽啊”
 'It's just in.' OK...
@@ -938,7 +940,7 @@ Marshal, remember this night.
 
 当你在我的婚礼上作伴郎并发言的时候
 你可以把这个故事讲一遍
-And you're the best man at our wedding. You give a speech. You're going to tell this story.
+And you're the best man at our wedding. You give a speech. You're gonna tell this story.
 
 怎么会是他做伴郎？
 Why does he get to be the best man?
@@ -991,7 +993,7 @@ You must have done that with a Lebanese girl.
 OK, that's my Barney. Let me 
 
 我去找找这房子里面有没有洗手间
-I'm going to see if that has a bathroom.
+I'm gonna see if that has a bathroom.
 
 事实上，我来自孟加拉国
 Actually, I'm from Bangladesh.
@@ -1078,7 +1080,7 @@ Well, I was 18, OK? I was a virgin.
 I've been waiting my whole life for a pretty girl to want my olives.
 
 Marshal，我先给你一个婚前礼物吧
-Marshal, I'm going to give you an early wedding present
+Marshal, I'm gonna give you an early wedding present
 
 “别结婚！”
 Don't get married.
@@ -1142,7 +1144,7 @@ Lily, I like olives.
 We'll make it work.
 
 说到Orlando，你在那边是报导什么？
-So Orlando, you're going to hit this new world?
+So Orlando, you're gonna hit this new world?
 
 你爱我！？
 You love me?
@@ -1200,7 +1202,7 @@ We can't just abandon Ted.
 
 如果上面进展不顺利的话
 他最需要朋友的支持
-If it doesn't go well up there, he's going to need some support.
+If it doesn't go well up there, he's gonna need some support.
 
 已经过去20分钟了
 It's been, like, 20 minutes.
@@ -1401,4 +1403,5 @@ Will you relax? I'm getting to it.
 
 我说过了，这是一个很长很长的故事……
 Like I said, it's a long story.
-```
+</pre>
+</figure>
