@@ -458,16 +458,16 @@ Let me guess, Ted?
 Sorry, Lily, I'm so sorry.
 
 送我们去医院
-Take us to the hospital.
+<mark>Take</mark> us <mark>to</mark> the hospital.
 
 你是不是打了她？
-Did you hit her?
+Did you <abbr title="[hɪt] vt.vi.n 打击；袭击">hit</abbr> her?
 
 打我？得了吧
 Hit me? Please!
 
 这小子连在床上打我屁股都不会
-This guy can barely even spank me in bed for fun.
+This guy can <abbr title="['bɛrli] adv. 仅仅，勉强；几乎不">barely</abbr> even <abbr title="[spæŋk] vt. 拍击使之前进；打…的屁股 vi. 掴 n. 一巴掌">spank</abbr> me in bed for fun.
 
 他就这么（轻拍一下）
 然后赶忙说：“哦，亲爱的，没弄疼你吧”
@@ -475,50 +475,50 @@ He's all like, 'Oh, honey, did that hurt?'
 
 而我就说
 “使劲些，让我尝尝你的厉害，娘娘腔”
-And I'm like, 'Oh, come on! Let me have you, pansy.'
+And I'm like, 'Oh, come on! <mark>Let me have you</mark>, <abbr title="['pænzi] n. 同性恋男子 adj. 女性化的；vt.vi. 打扮">pansy</abbr>.'
 
 哇哦，有个陌生人
-Wow, complete stranger.
+Wow, <abbr title="[kəm'plit] adj. 完整的；完全的；彻底的">complete</abbr> stranger.
 
 不不不不，没关系，继续说
-No, it's OK, go on.
+No, it's OK, <mark>go on</mark>.
 
 你是做哪一行的？
 So what do you do?
 
 我是都市新闻一台的记者
-I'm a reporter from Metronews One.
+I'm a reporter from <abbr title="['mɛtro] n. 地铁；大都市">Metro</abbr> News One.
 
 算半个播报员吧
-Kind of a reporter.
+<mark>Kind of</mark> a reporter.
 
 我总是在新闻之后播报一些无意义的小消息
 比如……
-I do those dumb little fluff pieces at the end of the news, you know, like,
+I do those <abbr title="[dʌm] adj. 哑的，无说话能力的；不说话的">dumb</abbr> little <abbr title="[flʌf] n. 绒毛；错误；无价值的东西">fluff</abbr><abbr title="[pis] n. 块；件；篇">pieces</abbr> at the end of the news, you know, like,
 
 猴子会弹ukulele
 （夏威夷的四弦琴）
-monkey can play the ukulele.
+monkey can play the <abbr title="['jʊkə'leli] n. 尤克里里">ukulele</abbr>.
 
 希望以后能够播报一些大新闻
 I'm hoping to get some bigger stories soon.
 
 大一点的？就好比……
 大猩猩演奏贝丝？
-Bigger like, gorilla with an upright bass?
+Bigger like, <abbr title="[ɡə'rɪlə] n. 大猩猩">gorilla</abbr> with an <abbr title="['ʌpraɪt] adj. 正直的，诚实的 n. 垂直">upright</abbr> <abbr title="[beɪs] n. 贝斯">bass</abbr>?
 
 不好意思，你看起来真漂亮
 I'm sorry. You're really pretty.
 
 你的朋友看起来心情不好
-Oh, your friends don't seem too happy.
+Oh, your friends don't <mark>seem to</mark> happy.
 
 中间那个刚被男朋友甩了
 所以今晚……
 Yeah, see the one in the middle just got dumped by her boyfriend, so tonight,
 
 所有男人都是“敌人”
-every guy is the "enemy".
+every guy is the "<abbr title="['ɛnəmi] n. 敌人 adj. 敌方的">enemy</abbr>".
 
 如果想要你朋友开心的话，你可以往我脸上泼饮料
 我不介意的
@@ -534,28 +534,28 @@ It does look fun in the movies.
 Hey, you want to have dinner with me Saturday night?
 
 我周五要去Orlando一个星期
-Oh, I can't. I'm gonna Orlando for a week on Friday.
+Oh, I can't. I'm gonna go <abbr title="[ɔ:'lændəu] n. 奥兰多">Orlando</abbr> for a week on Friday.
 
 有个人要做一个世界上最大的蛋糕
 我要负责这个报导
-Some guy's attempting to make the world's biggest pancake. Guess who's covering it?
+Some guy's <mark>attempting to</mark> make the world's biggest pancake. Guess who's <abbr title="['kʌvɚ] vt. 包括,报导 vi. 覆盖 n. 封面">cover</abbr>ing it?
 
--这能报导一个星期？
--是的，他还会把蛋糕吃掉，这也是个世界纪录
--That's gonna take a week?
--Yes. He's gonna eat it, too. That's another record.
+这能报导一个星期？
+是的，他还会把蛋糕吃掉，这也是个世界纪录
+That's gonna take a week?
+Yes. He's gonna eat it, too. That's another record.
 
 怎么回事那么久？
 Hey, what's taking so long?
 
 我知道这有些唐突，不过明晚怎么样？
-I know this is a long shot, but how about tomorrow night?
+I know this is <mark>a long shot</mark>, but how about tomorrow night?
 
 好吧，管他呢
-Yeah, what the hell?
+Yeah, <mark>what the <abbr title="[hɛl] n. 地狱">hell</abbr></mark>?
 
 混球！
-Jerk!
+<abbr title="[dʒɝk] vt.vi. 猛拉 n. 肌肉抽搐；蠢人,混蛋">Jerk</abbr>!
 
 真好玩
 That was fun.
@@ -570,7 +570,7 @@ Denied!
 We're going out tomorrow night.
 
 我以为我们明晚一起玩激光枪大战呢
-I thought we were playing laser attack tomorrow night!
+I thought we were playing <abbr title="['lezɚ] n. 激光">laser</abbr> <abbr title="[ə'tæk] n.vt.vi 攻击">attack</abbr> tomorrow night!
 
 没错，不过我从没打算玩激光枪大战
 Yeah, I was never gonna play laser attack.
@@ -580,19 +580,19 @@ The next night, I took her out to this little in Brooklyn.
 
 哇哦，那可真是个蓝色的法国喇叭
 （双关，亦可理解为法国色情电影）
-Wow, that is one bad ass boof French horn.
+Wow, that is one bad <abbr title="[æs] n. 屁股；驴子；蠢人">ass</abbr> boof French <abbr title="[hɔrn] n. 喇叭，号角">horn</abbr>.
 
 看到它我就想起了蓝精灵的阳具
-Yeah, so it looks like a smurf penis.
+Yeah, so it looks like a <abbr title="[smɝf] n. 蓝精灵，洗钱者">Smurf</abbr> <abbr title="['pinɪs] n. 阳物；阴茎">penis</abbr>.
 
 孩子们，给你们一些建议
-Son, a piece of advice.
+Son, <mark>a piece of</mark> advice.
 
 第一次约会的时候，你千万不要说“蓝精灵的阳具”
 When you go on a first date, you really don't want to say 'smurf penis.'
 
 一般情况下，女孩子们不想到这种东西
-Girls don't ordinarilly like that.
+Girls don't <abbr title="adv. 通常地；一般地">ordinarily</abbr> like that.
 
 不过这个女孩可不一般
 But this was no ordinary girl.
@@ -604,7 +604,7 @@ Lily?
 How have you been sitting there?
 
 愚蠢的眼罩
-The stupid odd patch!
+The stupid <abbr title="[ɑd] adj. 奇数的；古怪的 n. 奇数；怪人">odd</abbr><abbr title="[pætʃ] n. 眼罩；斑点 vt. 修补 vi. 打补丁">patch</abbr>!
 
 老爸，老妈，我已经找到了未来的Ted Mosbie夫人
 Mom, dad, I have found the future Mrs. Ted Mosbie!
@@ -787,10 +787,10 @@ No, you just kiss her!
 要是没有得到暗示就不行！
 Not if you don't get the signal.
 
--Marshal给我暗示了吗？
--没有！
--Did Marshal give me the signal?
--No!
+Marshal给我暗示了吗？
+没有！
+Did Marshal give me the signal?
+No!
 
 我没有，我发誓！
 I didn't. I swear.
@@ -880,10 +880,10 @@ I'm doing this.
 我们走
 Let's go.
 
--去哪儿？
--跟他一起走
--Where?
--We're coming with you.
+去哪儿？
+跟他一起走
+Where?
+We're coming with you.
 
 Barney？
 Barney?
@@ -959,10 +959,10 @@ I've got 5 dogs.
 不妙，不妙，不妙
 Not good, not good ...
 
--不行！
--给我回去！
--No!
--Get back in there!
+不行！
+给我回去！
+No!
+Get back in there!
 
 你身上穿着西服！
 You're wearing a suit!
@@ -1033,10 +1033,10 @@ We're starters.
 Marshal
 Marshal,
 
--这个橄榄果理论，是根据你和Lily？
--是啊
--This olive theory, based on you and Lily?
--Yeah.
+这个橄榄果理论，是根据你和Lily？
+是啊
+This olive theory, based on you and Lily?
+Yeah.
 
 你讨厌橄榄果，她喜欢，你受不了那味道？
 You hate olives. Lily loves them. You can't stand them?
@@ -1166,10 +1166,10 @@ Hold on. Wait a minute.
 我答应了给你这个
 I promised these.
 
--橄榄果
--是的
--Olives.
--Yes.
+橄榄果
+是的
+Olives.
+Yes.
 
 谢谢，我爱你
 Thanks. I love you.
@@ -1209,10 +1209,10 @@ It's been, like, 20 minutes.
 你想他们开始了吗？
 You think they're doing it?
 
--你想他们会在那些狗面前开始吗？
--嗯，用狗狗的姿势
--You think they're doing it in front of the dogs?
--Doggy style?
+你想他们会在那些狗面前开始吗？
+嗯，用狗狗的姿势
+You think they're doing it in front of the dogs?
+Doggy style?
 
 还记得大学的时候
 有个小妞养了条金毛猎犬……
@@ -1454,7 +1454,7 @@ Like I said, it's a long story.
     <dd>[ˈsɛrəˌmoʊni] n. 典礼，仪式</dd>
     <dt>vow</dt>
     <dd>[vaʊ] n. 誓言 vt.vi. 发誓</dd>
-    <dt>Damn</dt>
+    <dt>damn</dt>
     <dd>[dæm] vt.vi 谴责；n. 诅咒 adj. 可恶的</dd>
     <dt>actually</dt>
     <dd>['æktʃuəli] adv. 实际上；事实上</dd>
@@ -1482,10 +1482,69 @@ Like I said, it's a long story.
     <dd>[dʒʊk] vt. 用假动作诱使；佯攻 n.自动唱机</dd>
     <dt>jukebox</dt>
     <dd>['dʒʊk'bɑks] n.自动唱机</dd>
+    <dt>hit</dt>
+    <dd>[hɪt] vt.vi.n. 打击；袭击</dd>
+    <dt>barely</dt>
+    <dd>['bɛrli] adv. 仅仅，勉强；几乎不</dd>
+    <dt>spank</dt>
+    <dd>[spæŋk] vt. 拍击使之前进；打…的屁股 vi. 掴 n. 一巴掌</dd>
+    <dt>pansy</dt>
+    <dd>['pænzi] n. 同性恋男子 adj. 女性化的；vt.vi. 打扮</dd>
+    <dt>complete</dt>
+    <dd>[kəm'plit] adj. 完整的；完全的；彻底的 vt. 完成</dd>
+    <dt>metro</dt>
+    <dd>['mɛtro] n. 地铁；大都市</dd>
+    <dt>dumb</dt>
+    <dd>[dʌm] adj. 哑的，无说话能力的；不说话的</dd>
+    <dt>fluff</dt>
+    <dd>[flʌf] n. 绒毛；错误；无价值的东西</dd>
+    <dt>piece</dt>
+    <dd>[pis] n. 块；件；篇</dd>
+    <dt>ukulele</dt>
+    <dd>['jʊkə'leli] n. 尤克里里</dd>
+    <dt>gorilla</dt>
+    <dd>[ɡə'rɪlə] n. 大猩猩</dd>
+    <dt>upright</dt>
+    <dd>['ʌpraɪt] adj. 正直的，诚实的 n. 垂直</dd>
+    <dt>bass</dt>
+    <dd>[beɪs] n. 贝斯</dd>
+    <dt>dump</dt>
+    <dd>[dʌmp] vt.vi. 丢弃</dd>
+    <dt>enemy</dt>
+    <dd>['ɛnəmi] n. 敌人 adj. 敌方的</dd>
+    <dt>Orlando</dt>
+    <dd>[ɔ:'lændəu] n. 奥兰多</dd>
+    <dt>cover</dt>
+    <dd>['kʌvɚ] vt. 包括,报导 vi. 覆盖 n. 封面</dd>
+    <dt>shot</dt>
+    <dd>[ʃɑt] n. 发射；炮弹；射手；镜头</dd>
+    <dt>hell</dt>
+    <dd>[hɛl] n. 地狱</dd>
+    <dt>jerk</dt>
+    <dd>[dʒɝk] vt.vi. 猛拉 n. 肌肉抽搐；蠢人,混蛋</dd>
+    <dt>deny</dt>
+    <dd>[dɪ'nai] vt.vi. 否定，拒绝</dd>
+    <dt>laser</dt>
+    <dd>['lezɚ] n. 激光</dd>
+    <dt>attack</dt>
+    <dd>[ə'tæk] n.vt.vi 攻击</dd>
+    <dt>ass</dt>
+    <dd>[æs] n. 屁股；驴子；蠢人</dd>
+    <dt>horn</dt>
+    <dd>[hɔrn] n. 喇叭，号角</dd>
+    <dt>Smurf</dt>
+    <dd>[smɝf] n. 蓝精灵，洗钱者</dd>
+    <dt>penis</dt>
+    <dd>['pinɪs] n. 阳物；阴茎</dd>
+    <dt>ordinarily</dt>
+    <dd>[,ɔrdn'ɛrəli] adv. 通常地；一般地</dd>
+    <dt>odd</dt>
+    <dd>[ɑd] adj. 奇数的；古怪的 n. 奇数；怪人</dd>
+    <dt>patch</dt>
+    <dd>[pætʃ] n. 眼罩；斑点 vt. 修补 vi. 打补丁</dd>
 </dl>
 
 #### Word Group
-
 <dl>
     <dt>way back to sth</dt>
     <dd>回归...</dd>
@@ -1541,6 +1600,18 @@ Like I said, it's a long story.
     <dd>使处于极度兴奋中；崩溃</dd>
     <dt>turn to</dt>
     <dd>转向；变成；求助于</dd>
+    <dt>go on</dt>
+    <dd>继续；过去；继续下去</dd>
+    <dt>kind of</dt>
+    <dd>有点儿，差不多，相当</dd>
+    <dt>attempt to do sth</dt>
+    <dd>试图做某事</dd>
+    <dt>a long shot</dt>
+    <dd>唐突的事情，不太会成功的大胆尝试</dd>
+    <dt>what the hell</dt>
+    <dd>管他呢</dd>
+    <dt>a piece of</dt>
+    <dd>一块，一片</dd>
 </dl>
 
 #### Grammar
