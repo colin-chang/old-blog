@@ -1436,8 +1436,6 @@ Like I said, it's a long story.
     <dd>[ɡo'ti] n. 山羊胡</dd>
     <dt>exhibitive</dt>
     <dd>[ɪɡ'zɪbɪtɪv] adj. 表示的，供展览的</dd>
-    <dt>start t doing sth</dt>
-    <dd>开始做某事</dd>
     <dt>exhausted</dt>
     <dd>[ɪɡ'zɔstɪd] adj. 疲惫的；耗尽的</dd>
     <dt>creepy</dt>
@@ -1447,7 +1445,7 @@ Like I said, it's a long story.
     <dt>handle</dt>
     <dd>['hændl] vt. 处理；操作</dd>
     <dt>imagine</dt>
-    <dd>[i'mædʒin] vt.vi. 想像</dd>
+    <dd>[ɪ'mædʒɪn] vt.vi. 想像</dd>
     <dt>settling</dt>
     <dd>['sɛtlɪŋ] n. 安置 v. 解决；安居（settle的ing形式）</dd>
     <dt>eventually</dt>
@@ -1491,7 +1489,7 @@ Like I said, it's a long story.
 <dl>
     <dt>way back to sth</dt>
     <dd>回归...</dd>
-    <dt>start to do sth</dt>
+    <dt>start to do sth / start doing sth</dt>
     <dd>开始做..</dd>
     <dt>screw sth up</dt>
     <dd>弄糟..., 拧紧...</dd>
