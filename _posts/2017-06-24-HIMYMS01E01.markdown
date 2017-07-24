@@ -622,13 +622,13 @@ She likes dogs?
 I've got 5 dogs.
 
 爱喝苏格兰威士忌
-She drinks scotch?
+She drinks <abbr title="[skɑtʃ] vi. 扑灭；镇压 n. 刻痕；苏格兰威士忌">scotch</abbr>?
 
 我自从饮酒年龄开始就爱喝苏格兰威士忌了
 I love a scotch that's old enough to own it's own scotch.
 
 她喜欢引用《捉鬼敢死队》里的台词？
-Can quote obsure lines from 'Ghost Busters?'
+Can <abbr title="[kwot] vt.vi. 报价；引述 n. 引用">quote</abbr> obsure lines from 'Ghost <abbr title="['bʌstɚ] n. 起破坏，小家伙；">Busters</abbr>?'
 
 “Ray，要是别人问你是不是上帝
 你就说是！”
@@ -638,13 +638,13 @@ Can quote obsure lines from 'Ghost Busters?'
 And I'm saving the best for last.
 
 你想吃这个吗？我讨厌橄榄果
-Do you want this? I hate olives.
+Do you want this? I hate <abbr title="['ɑlɪv] n. 橄榄；橄榄树；橄榄色 adj. 橄榄的">olives</abbr>.
 
 她讨厌橄榄果，太棒了
 She hates olives! Awesome!
 
 橄榄果理论
-The olive theory!
+The olive <abbr title="['θiəri] n. 理论；原理；学说；推测">theory</abbr>!
 
 橄榄果理论来自于我的朋友Marshal和Lily
 The olive theory is based on my friends Marshal and Lily.
@@ -658,10 +658,10 @@ Perfect balance.
 
 要知道，我有一罐橄榄果
 好像在我的冰箱里呆了足足一个世纪了
-You know, I've had a jar of olives just sitting in my fridge forever.
+You know, I've had <mark>a <abbr title="[dʒɑr] n. 罐 vi. 冲突；震惊 vt. 震动">jar</abbr> of</mark> olives just sitting in my fridge forever.
 
 我可以帮你脱手
-I can take them off your hands.
+I can <mark>take</mark> them <mark>off</mark> your hands.
 
 它们都归你了
 They are all yours.
@@ -673,25 +673,25 @@ Oh, it is on! It is on till that breakup done!
 Wait, it's only the break at 10:30. What happened?
 
 我真想在自家壁炉上也挂一个蓝色的法国喇叭
-I've got to get one of those boof French horns over my fireplace.
+I've got to get one of those boof French horns over my <abbr title="['faɪɚples] n. 壁炉"></abbr>fireplace.
 
 一定要是蓝色的，一定要是法国的
-It's got to be blue. It's got to be French.
+It's <mark>got to</mark> be blue. It's got to be French.
 
 不要绿色的单簧管？
-No green clarinet?
+No green <abbr title="[,klærə'nɛt] n. 单簧管；竖笛，黑管">clarinet</abbr>?
 
 也不要紫色的大号？
-No purple tuba?
+No purple <abbr title="['tubə] n. 大号">tuba</abbr>?
 
 这些都不能让我想起“假阳具”
-It's a smurf penis. We are no dice.
+It's a smurf penis. We are no <abbr title="[daɪs]n. 骰子 vi. 掷骰子">dice</abbr>.
 
 总算找到你了
 There you are.
 
 有个要轻生的人，某个曼哈顿大桥上的疯子
-We got a jumper, some crazy guy on the Manhattan Bridge.
+We got a jumper, some crazy guy on the <abbr title="[mæn'hæt(ə)n] n. 曼哈顿">Manhattan</abbr> Bridge.
 
 快来，你来报导
 Come on. You're covering it.
@@ -722,14 +722,14 @@ Look, this woman could actually be my future wife. I want our first kiss to be a
 Oh, Ted, that is so sweet!
 
 于是你就像小女人一样退缩了
-So you chickened out like a little bitch.
+So you <mark>chickened out</mark> like a little bitch.
 
 什么？我可没有退缩！
 What? I did not chicken out.
 
 说实话，我可用不着从某个……
 海盗那里，探教初吻经验
-You know what? I don't need to take a first kiss advice from some pirate
+You know what? I don't need to take a first kiss advice from some <abbr title="['paɪrət] n. 海盗；盗版 vt. 掠夺">pirate</abbr>
 
 你大学第一周就不是单身一族了
 who hasn't be single since the first week at college.
@@ -752,7 +752,7 @@ Hey, loser? How's not playing laser attack? Because playing laser attack is awes
 I killed you, connered. I'll make me get your mom.
 
 听我说，有件事我想听听你的意见
-Listen, I need your opinion on something.
+Listen, I need your <mark>opinion on</mark> something.
 
 好的，我们15分钟后在酒吧见……
 OK, meet me at the bar in 15 minutes.
@@ -776,7 +776,7 @@ you're still not waring a suit!
 She didn't even give me the signal.
 
 那又怎样，难道她得用眼睛眨莫尔斯码？
-What? Is she gonna bat her eyes at you in Morse code?
+What? Is she gonna <mark>bat</mark> her <mark>eyes</mark> at you in Morse code?
 
 “Ted……吻我”
 'Ted, kiss me.'
@@ -793,11 +793,11 @@ Did Marshal give me the signal?
 No!
 
 我没有，我发誓！
-I didn't. I swear.
+I didn't. I <abbr title="[swɛr] vt.vi. 发誓；咒骂 n. 宣誓；诅咒">swear</abbr>.
 
 至少我知道Marshal和我之间是不可能的
 今晚可以睡个安稳觉
-At least tonight I get to sleep knowing Marshal and me, never gonna happen.
+<mark>At least</mark> tonight I get to sleep knowing Marshal and me, never gonna happen.
 
 你本该吻她
 You should have kissed her.
@@ -1542,6 +1542,34 @@ Like I said, it's a long story.
     <dd>[ɑd] adj. 奇数的；古怪的 n. 奇数；怪人</dd>
     <dt>patch</dt>
     <dd>[pætʃ] n. 眼罩；斑点 vt. 修补 vi. 打补丁</dd>
+    <dt>scotch</dt>
+    <dd>[skɑtʃ] vi. 扑灭；镇压 n. 刻痕；苏格兰威士忌</dd>
+    <dt>quote</dt>
+    <dd>[kwot] vt.vi. 报价；引述 n. 引用</dd>
+    <dt>buster</dt>
+    <dd>['bʌstɚ] n. 起破坏，小家伙</dd>
+    <dt>olive</dt>
+    <dd>['ɑlɪv] n. 橄榄；橄榄树；橄榄色 adj. 橄榄的</dd>
+    <dt>theory</dt>
+    <dd>['θiəri] n. 理论；原理；学说；推测</dd>
+    <dt>jar</dt>
+    <dd>[dʒɑr] n. 罐 vi. 冲突；震惊 vt. 震动</dd>
+    <dt>fireplace</dt>
+    <dd>['faɪɚples] n. 壁炉</dd>
+    <dt>clarinet</dt>
+    <dd>[,klærə'nɛt] n. 单簧管；竖笛，黑管</dd>
+    <dt>tuba</dt>
+    <dd>['tubə] n. 大号</dd>
+    <dt>dice</dt>
+    <dd>[daɪs]n. 骰子 vi. 掷骰子</dd>
+    <dt>Manhattan</dt>
+    <dd>[mæn'hæt(ə)n] n. 曼哈顿</dd>
+    <dt>pirate</dt>
+    <dd>['paɪrət] n. 海盗；盗版 vt. 掠夺</dd>
+    <dt>bat</dt>
+    <dd>[bæt] n. 蝙蝠；球棒；球拍 vt.vi. 用球棒击球</dd>
+    <dt>swear</dt>
+    <dd>[swɛr] vt.vi. 发誓；咒骂 n. 宣誓；诅咒</dd>
 </dl>
 
 #### Word Group
@@ -1612,6 +1640,16 @@ Like I said, it's a long story.
     <dd>管他呢</dd>
     <dt>a piece of</dt>
     <dd>一块，一片</dd>
+    <dt>a jar of</dt>
+    <dd>一罐，一拼</dd>
+    <dt>chicken out</dt>
+    <dd>临阵退缩；因害怕而停止做某事</dd>
+    <dt>opinion on</dt>
+    <dd>有关…的意见</dd>
+    <dt>bat one's eyes</dt>
+    <dd>眨眼睛</dd>
+    <dt>at least</dt>
+    <dd>至少</dd>
 </dl>
 
 #### Grammar
