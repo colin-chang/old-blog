@@ -749,7 +749,7 @@ Hey, loser? How's not playing laser attack? Because playing laser attack is awes
 
 我已经把你干掉了，Conerd
 小心我给你妈妈打电话
-I killed you, connered. I'll make me get your mom.
+I killed you, Connered. I'll make me get your mom.
 
 听我说，有件事我想听听你的意见
 Listen, I need your <mark>opinion on</mark> something.
@@ -797,7 +797,7 @@ I didn't. I <abbr title="[swɛr] vt.vi. 发誓；咒骂 n. 宣誓；诅咒">swea
 
 至少我知道Marshal和我之间是不可能的
 今晚可以睡个安稳觉
-<mark>At least</mark> tonight I get to sleep knowing Marshal and me, never gonna happen.
+<mark>At least</mark> tonight I  <mark>get</mark> to sleep knowing Marshal and me, never gonna happen.
 
 你本该吻她
 You should have kissed her.
@@ -829,7 +829,7 @@ Woo, she's cute. Carl, turn it up.
 
 “最后这个人走下了护栏
 我们的故事也有了一个圆满的结局”
-at which point the man came down off the ledge, giving this bizzare story a happy ending.
+at which point the man came down off the <abbr title="[lɛdʒ] n. 壁架；突出之部份；暗礁；矿层">ledge</abbr>, giving this bizzare story a happy ending.
 
 “都市新闻一台报导……”
 Reporting from Metro 1 News ...
@@ -1570,6 +1570,8 @@ Like I said, it's a long story.
     <dd>[bæt] n. 蝙蝠；球棒；球拍 vt.vi. 用球棒击球</dd>
     <dt>swear</dt>
     <dd>[swɛr] vt.vi. 发誓；咒骂 n. 宣誓；诅咒</dd>
+    <dt>ledge</dt>
+    <dd>[lɛdʒ] n. 壁架；突出之部份；暗礁；矿层</dd>
 </dl>
 
 #### Word Group
@@ -1650,6 +1652,8 @@ Like I said, it's a long story.
     <dd>眨眼睛</dd>
     <dt>at least</dt>
     <dd>至少</dd>
+    <dt>get to sleep</dt>
+    <dd>入睡</dd>
 </dl>
 
 #### Grammar
