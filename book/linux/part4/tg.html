@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4. Brook · Linux-运维之美</title>
+        <title>5. Telegram · Linux-运维之美</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -82,10 +82,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tg.html" />
     
-    
-    <link rel="prev" href="v2ray.html" />
+    <link rel="prev" href="brook.html" />
     
 
     
@@ -496,7 +494,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.4" data-path="brook.html">
+        <li class="chapter " data-level="5.4" data-path="brook.html">
             
                 <a href="brook.html">
             
@@ -509,7 +507,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="tg.html">
+        <li class="chapter active" data-level="5.5" data-path="tg.html">
             
                 <a href="tg.html">
             
@@ -552,7 +550,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4. Brook</a>
+        <a href=".." >5. Telegram</a>
     </h1>
 </div>
 
@@ -567,126 +565,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook"><a name="&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook" class="plugin-anchor" href="#&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6; &#x2014; Brook</h1>
-<h2 id="1-brook-&#x7B80;&#x4ECB;"><a name="1-brook-&#x7B80;&#x4ECB;" class="plugin-anchor" href="#1-brook-&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Brook &#x7B80;&#x4ECB;</h2>
-<p><a href="https://github.com/txthinking/brook" target="_blank">Brook</a> &#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6548;&#x7684; Socks5 &#x4EE3;&#x7406;&#x8F6F;&#x4EF6;&#xFF0C;&#x5B98;&#x65B9;&#x652F;&#x6301;Windows&#x3001;Linux&#x3001;MacOS&#x3001;IOS&#x3001;Android&#x3001;&#x6811;&#x8393;&#x6D3E;&#x7B49;&#x8BBE;&#x5907;&#xFF0C;&#x540C;&#x65F6;&#x662F;&#x4F7F;&#x7528; Golang &#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x5B89;&#x88C5;&#x3001;&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
-<p>Brook &#x652F;&#x6301; &#x81EA;&#x4E3B;&#x7814;&#x53D1; Brook&#xFF08;&#x65B0;&#x7248;&#xFF09; &#x534F;&#x8BAE;+Stream Brook&#xFF08;&#x65E7;&#x7248;&#xFF09;&#x534F;&#x8BAE;&#x3001;Shadowsocks &#x534F;&#x8BAE;&#x3001;SOCKS5 &#x534F;&#x8BAE;&#x3001;TCP/UDP &#x8F6C;&#x53D1;&#x3001;SOCKS5&#x4EE3;&#x7406;&#x8F6C;HTTP&#x4EE3;&#x7406; &#x7B49;&#x529F;&#x80FD;&#x3002;</p>
-<p>Brook &#x652F;&#x6301; UDP&#x8F6C;&#x53D1;&#xFF0C;&#x65E0;&#x9700;&#x4EFB;&#x4F55;&#x8BBE;&#x7F6E;&#x3002;</p>
-<p>&#x652F;&#x6301;&#x5355;&#x7AEF;&#x53E3;&#x548C;&#x591A;&#x7AEF;&#x53E3;(&#x6BCF;&#x4E2A;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x8BBE;&#x5B9A;&#x5BC6;&#x7801;)&#xFF0C;&#x8FD9;&#x70B9;&#x7C7B;&#x4F3C;&#x4E8E; Shadowsocks &#x548C; ShadowsocksR &#x7684;&#x5355;&#x7528;&#x6237;&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
-<h2 id="2-brook-&#x4E0A;&#x624B;"><a name="2-brook-&#x4E0A;&#x624B;" class="plugin-anchor" href="#2-brook-&#x4E0A;&#x624B;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Brook &#x4E0A;&#x624B;</h2>
-<h3 id="21-&#x670D;&#x52A1;&#x7AEF;"><a name="21-&#x670D;&#x52A1;&#x7AEF;" class="plugin-anchor" href="#21-&#x670D;&#x52A1;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x670D;&#x52A1;&#x7AEF;</h3>
-<p>&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;Brook&#x8282;&#x70B9;&#x5916;&#xFF0C;&#x76F8;&#x4FE1;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5DF2;&#x7ECF;&#x8FEB;&#x4E0D;&#x53CA;&#x5F85;&#x7684;&#x60F3;&#x81EA;&#x5EFA;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5C0F;&#x8BD5;&#x8EAB;&#x624B;&#x4E86;&#xFF0C;&#x8BDD;&#x4E0D;&#x591A;&#x8BF4;&#xFF0C;&#x8FD9;&#x5C31;&#x64CD;&#x7EC3;&#x8D77;&#x6765;&#x5427;...</p>
-<p>Brook&#x670D;&#x52A1;&#x7AEF;&#x652F;&#x6301;Linux/mac OS/Windows&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x8FD8;&#x662F;&#x9009;&#x62E9;&#x4EE5;Linux&#x4E3A;&#x4F8B;&#x3002;</p>
-<h4 id="211-&#x5B98;&#x65B9;&#x811A;&#x672C;"><a name="211-&#x5B98;&#x65B9;&#x811A;&#x672C;" class="plugin-anchor" href="#211-&#x5B98;&#x65B9;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1 &#x5B98;&#x65B9;&#x811A;&#x672C;</h4>
-<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5207;&#x6362;&#x5230;root</span>
-$ <span class="token function">sudo</span> -i
-<span class="token comment"># &#x6821;&#x51C6;&#x65F6;&#x95F4;</span>
-$ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
-<span class="token comment"># &#x5B89;&#x88C5;&#x5B98;&#x65B9;&#x811A;&#x672C;&#x3002; &#x6700;&#x65B0;&#x7248;&#x811A;&#x672C;&#x5730;&#x5740;&#x53EF;&#x4EE5;&#x4ECE;&#x5B98;&#x65B9; https://github.com/txthinking/brook/releases</span>
-$ <span class="token function">wget</span> https://github.com/txthinking/brook/releases/download/v20181212/brook
-$ <span class="token function">chmod</span> -R 744 brook
-$ ./brook
-
-<span class="token comment"># &#x4EE5;&#x670D;&#x52A1;&#x65B9;&#x5F0F;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x3002;&#x4E0D;&#x540C;&#x53D1;&#x884C;&#x7248;Linux&#xFF0C;&#x547D;&#x4EE4;&#x4E0D;&#x540C;&#x6B64;&#x5904;&#x4EE5;Debian9&#x4E3A;&#x4F8B;</span>
-$ <span class="token function">screen</span> -dmS brook ./brook server -l :5468 -p xinzhe468brook <span class="token comment"># -l&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#xFF0C;-p&#x6307;&#x5B9A;&#x5BC6;&#x7801;</span>
-</code></pre>
-<h4 id="212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;"><a name="212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;" class="plugin-anchor" href="#212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2 &#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;</h4>
-<p>&#x6B64;&#x811A;&#x672C;&#x9664;&#x4E86;&#x4E00;&#x952E;&#x5B89;&#x88C5;Brook&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#x3002;</p>
-<p>&#x7CFB;&#x7EDF;&#x8981;&#x6C42;&#xFF1A;CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
-<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5207;&#x6362;&#x5230;root</span>
-$ <span class="token function">sudo</span> -i
-<span class="token comment"># &#x6821;&#x51C6;&#x65F6;&#x95F4;</span>
-$ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-<span class="token comment"># &#x4E00;&#x952E;&#x5B89;&#x88C5;</span>
-$ <span class="token function">wget</span> -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/brook.sh <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> +x brook.sh <span class="token operator">&amp;&amp;</span> <span class="token function">bash</span> brook.sh
-</code></pre>
-<p>&#x6309;&#x4E00;&#x4E0B;&#x63D0;&#x793A;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;</p>
-<pre class="language-"><code>0. &#x5347;&#x7EA7;&#x811A;&#x672C;
-&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
- 1. &#x5B89;&#x88C5; Brook
- 2. &#x5347;&#x7EA7; Brook
- 3. &#x5378;&#x8F7D; Brook
-&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
- 4. &#x542F;&#x52A8; Brook
- 5. &#x505C;&#x6B62; Brook
- 6. &#x91CD;&#x542F; Brook
-&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
- 7. &#x8BBE;&#x7F6E; &#x8D26;&#x53F7;&#x914D;&#x7F6E;
- 8. &#x67E5;&#x770B; &#x8D26;&#x53F7;&#x4FE1;&#x606F;
- 9. &#x67E5;&#x770B; &#x65E5;&#x5FD7;&#x4FE1;&#x606F;
-10. &#x67E5;&#x770B; &#x94FE;&#x63A5;&#x4FE1;&#x606F;
-&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
-
- &#x5F53;&#x524D;&#x72B6;&#x6001;: &#x5DF2;&#x5B89;&#x88C5; &#x5E76; &#x5DF2;&#x542F;&#x52A8;
-
- &#x8BF7;&#x8F93;&#x5165;&#x6570;&#x5B57; [0-10]:
-</code></pre><blockquote>
-<p>&#x5E38;&#x7528;&#x64CD;&#x4F5C;</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x64CD;&#x4F5C;</th>
-<th style="text-align:left">&#x547D;&#x4EE4;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">&#x542F;&#x52A8;</td>
-<td style="text-align:left">/etc/init.d/brook start</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x505C;&#x6B62;</td>
-<td style="text-align:left">/etc/init.d/brook stop</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x91CD;&#x542F;</td>
-<td style="text-align:left">/etc/init.d/brook restart</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x67E5;&#x770B;&#x72B6;&#x6001;</td>
-<td style="text-align:left">/etc/init.d/brook status</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x5B89;&#x88C5;&#x76EE;&#x5F55;</td>
-<td style="text-align:left">/usr/local/brook</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
-<td style="text-align:left">/usr/local/brook/brook.conf</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</td>
-<td style="text-align:left">/usr/local/brook/brook.log&#xFF08;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#xFF09;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="212-brook-web"><a name="212-brook-web" class="plugin-anchor" href="#212-brook-web"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2 Brook-Web</h4>
-<p>&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x547D;&#x4EE4;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4EE5;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;Brook&#xFF0C;&#x4F46;&#x76F8;&#x5BF9;&#x4E8E;GUI&#x6765;&#x8BF4;&#x4E0D;&#x662F;&#x592A;&#x597D;&#xFF0C;&#x4E0D;&#x9002;&#x5408;&#x5C0F;&#x767D;&#x7528;&#x6237;&#x3002;<a href="https://github.com/Ccapton/brook-web" target="_blank">Brook-Web</a>&#x9879;&#x76EE;&#x5C31;&#x4E00;&#x4E3E;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;Brook-Web&#x4F9D;&#x6258;&#x4E8E;Brook&#x4EE3;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x8FC7; Python &#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5728;&#x7F51;&#x9875;&#x7AEF;&#x7BA1;&#x7406; Brook&#x3001;Shadowsocks&#x3001;Socks5 &#x4EE3;&#x7406;&#x8D26;&#x53F7;&#x3002;</p>
-<p>&#x76F8;&#x6BD4;&#x4E0E;&#x5E38;&#x89C4;&#x90E8;&#x7F72;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x63A8;&#x8350;&#x4F7F;&#x7528;Docker&#x90E8;&#x7F72;&#x3002;</p>
+                                <h1 id="telegram---&#x7545;&#x4EAB;&#x5B89;&#x5168;&#x81EA;&#x7531;&#x901A;&#x8BAF;"><a name="telegram---&#x7545;&#x4EAB;&#x5B89;&#x5168;&#x81EA;&#x7531;&#x901A;&#x8BAF;" class="plugin-anchor" href="#telegram---&#x7545;&#x4EAB;&#x5B89;&#x5168;&#x81EA;&#x7531;&#x901A;&#x8BAF;"><i class="fa fa-link" aria-hidden="true"></i></a>Telegram - &#x7545;&#x4EAB;&#x5B89;&#x5168;&#x81EA;&#x7531;&#x901A;&#x8BAF;</h1>
+<h2 id="1-telegram-&#x7B80;&#x4ECB;"><a name="1-telegram-&#x7B80;&#x4ECB;" class="plugin-anchor" href="#1-telegram-&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Telegram &#x7B80;&#x4ECB;</h2>
+<p>Telegram(&#x4FD7;&#x79F0;TG&#x6216;&#x7535;&#x62A5;) &#x662F;&#x4E00;&#x4E2A;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x5B9E;&#x65F6;&#x901A;&#x8BAF;&#x5E94;&#x7528;&#xFF0C;&#x5B83;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x81EA;&#x7531;&#x53CA;&#x5F00;&#x653E;&#x6E90;&#x4EE3;&#x7801;&#x5E94;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x670D;&#x52A1;&#x5668;&#x662F;&#x4E13;&#x6709;&#x5E94;&#x7528;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x4EA4;&#x6362;&#x52A0;&#x5BC6;&#x4E0E;&#x81EA;&#x6790;&#x6784;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x7167;&#x7247;&#x3001;&#x5F71;&#x7247;&#x3001;&#x6587;&#x4EF6;&#xFF0C;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x6216;&#x8BB8;&#x4F60;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x542C;&#x8BF4;&#x8FC7;&#x8FD9;&#x6B3E;&#x5E94;&#x7528;&#xFF0C;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6240;&#x5C5E;&#x7684;&#x516C;&#x53F8; Telegram Messenger LLP &#x662F;&#x4E00;&#x5BB6;&#x72EC;&#x7ACB;&#x7684;&#x975E;&#x8425;&#x5229;&#x516C;&#x53F8;&#xFF0C;&#x6CA1;&#x6709;&#x5546;&#x4E1A;&#x5229;&#x76CA;&#x9A71;&#x52A8;&#xFF0C;&#x4E0D;&#x5236;&#x9020;&#x65B0;&#x95FB;&#xFF0C;&#x4E0D;&#x7092;&#x4F5C;&#xFF0C;&#x4EA7;&#x54C1;&#x4E0D;&#x88AB;&#x5927;&#x4F17;&#x6240;&#x77E5;&#x4E5F;&#x5C31;&#x4E0D;&#x96BE;&#x7406;&#x89E3;&#x4E86;&#x3002;</p>
+<p>&#x4E13;&#x4E3A;&#x804A;&#x5929;&#x800C;&#x751F;&#x3002;&#x538C;&#x5026;&#x4E86;&#x5FAE;&#x4FE1;&#x7EFF;&#x548C;&#x5FAE;&#x535A;&#x6A59;&#xFF0C;&#x770B;&#x5230;&#x8FD9;&#x79CD;&#x58A8;&#x84DD;&#x8272;&#x8C03;&#x8FD8;&#x662F;&#x86EE;&#x8212;&#x670D;&#x7684;&#x3002;&#x5B83;&#x6574;&#x4F53;&#x91C7;&#x7528;&#x4E86; Material Design &#x7684;&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#xFF0C;&#x529F;&#x80FD;&#x90FD;&#x96C6;&#x4E2D;&#x5728;&#x4FA7;&#x6ED1;&#x62BD;&#x5C49;&#x4E2D;&#xFF0C;&#x4E3B;&#x754C;&#x9762;&#x4E3A;&#x804A;&#x5929;&#x754C;&#x9762;&#xFF0C;&#x70B9;&#x51FB;&#x4E3B;&#x754C;&#x9762;&#x53F3;&#x4E0B;&#x89D2;&#x7684;&#x300C;&#x5927;&#x7F8E;&#x5706;&#x300D;&#x53EF;&#x4EE5;&#x53D1;&#x8D77;&#x804A;&#x5929;&#x3002;</p>
+<p>&#x51E0;&#x4E4E;&#x65E0;&#x61C8;&#x53EF;&#x51FB;&#x7684;&#x5B89;&#x5168;&#x4E0E;&#x79C1;&#x5BC6;&#x6027;&#x3002;&#x770B;&#x4E0B;&#x7528;&#x6237;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#xFF0C;IS,&#x666E;&#x4EAC;,&#x5DDD;&#x666E;&#xFF0C;&#x6CA1;&#x9519;&#x4ED6;&#x4EEC;&#x90FD;&#x5728;&#x7528;... &#x76F8;&#x6BD4;&#x5FAE;&#x4FE1;&#x7B49;&#xFF0C;&#x4E0D;&#x89E3;&#x91CA;&#xFF0C;&#x5927;&#x5BB6;&#x61C2;...</p>
+<h2 id="2-telegram-&#x4E0B;&#x8F7D;"><a name="2-telegram-&#x4E0B;&#x8F7D;" class="plugin-anchor" href="#2-telegram-&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Telegram &#x4E0B;&#x8F7D;</h2>
+<p>&#x5B98;&#x65B9;&#x7F51;&#x7AD9;&#x6709;&#x6B63;&#x5F0F;&#x53D1;&#x5E03; Android&#x3001;iOS&#x3001;Mac OS X &#x4E0E; &#x6B63;&#x5728; Beta &#x7684; Windows Phone &#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p><a href="https://telegram.org/" target="_blank">https://telegram.org/</a> &#x9700;&#x8981;&#x7FFB;&#x5899;&#x8BBF;&#x95EE;&#x1F622;&#x1F622;&#x1F622;</p>
+<h2 id="3-mtproxy"><a name="3-mtproxy" class="plugin-anchor" href="#3-mtproxy"><i class="fa fa-link" aria-hidden="true"></i></a>3. MTProxy</h2>
+<p>&#x4E00;&#x6B21;&#x7FFB;&#x5899;&#x4E0B;&#x8F7D;&#x5BA2;&#x6237;&#x7AEF;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x76F4;&#x7FFB;&#x5899;&#x4F7F;&#x7528;&#x5F53;&#x7136;&#x4E5F;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4F30;&#x8BA1;&#x5BF9;&#x7FFB;&#x5899;&#x4E0D;&#x719F;&#x6089;&#x7684;&#x7AE5;&#x978B;&#x4EEC;&#x8981;&#x54ED;&#x4E86;&#xFF0C;&#x8FD8;&#x597D;Telegram&#x63D0;&#x4F9B;&#x4E86;&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>Telegram&#x652F;&#x6301;Socket5&#x548C;MTProy&#x4E24;&#x79CD;&#x4EE3;&#x7406;&#x3002;&#x5173;&#x4E8E;Socket5&#x4EE3;&#x7406;&#xFF0C;Brook&#x548C;V2Ray&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x642D;&#x5EFA;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4E0B;Telegram&#x7279;&#x6709;&#x7684;MTProxy&#x4EE3;&#x7406;&#xFF0C;&#x8FD9;&#x662F;&#x5B98;&#x65B9;&#x4E3A;TG&#x4E13;&#x95E8;&#x8BBE;&#x8BA1;&#x7684;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4EE5; Debian9 &#x4E3A;&#x4F8B;&#xFF0C;&#x901A;&#x8FC7;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;docker&#x955C;&#x50CF;&#xFF0C;&#x5FEB;&#x901F;&#x7684;&#x5927;&#x5BB6;&#x4E00;&#x53F0; MTProxy&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x5C31;&#x641E;&#x8D77;&#x6765;&#x5427;...</p>
 <pre class="language-"><code class="lang-sh">$ <span class="token function">sudo</span> -i
+<span class="token comment"># &#x540C;&#x6B65;&#x65F6;&#x95F4;</span>
 $ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-<span class="token comment"># &#x5B89;&#x88C5;docker</span>
+<span class="token comment"># &#x5B89;&#x88C5;docker </span>
 $ <span class="token function">curl</span> -fsSL https://get.docker.com -o get-docker.sh
-$ <span class="token function">sudo</span> sh get-docker.sh
-
-<span class="token comment"># &#x8FD0;&#x884C;docker&#x955C;&#x50CF;</span>
-$ docker run --net<span class="token operator">=</span>host -d capton/brook-web /bin/bash -c <span class="token string">&quot;python brook-web.py 80&quot;</span>
+$ sh get-docker.sh
+<span class="token comment"># &#x83B7;&#x53D6;&#x5B98;&#x65B9;docker&#x955C;&#x50CF;</span>
+$ docker pull telegrammessenger/proxy
+<span class="token comment"># &#x8FD0;&#x884C;docker&#x5BB9;&#x5668;</span>
+$ docker run -d -p443:443 --name<span class="token operator">=</span>mtproto-proxy --restart<span class="token operator">=</span>always -v proxy-config:/data telegrammessenger/proxy:latest
+<span class="token comment"># &#x67E5;&#x770B;&#x4EE3;&#x7406;&#x4FE1;&#x606F;</span>
+$ docker logs mtproto-proxy
 </code></pre>
-<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x6253;&#x5F00;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <a href="http://ip" target="_blank">http://ip</a> &#x5373;&#x53EF;&#x3002;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x9ED8;&#x8BA4;&#x90FD;&#x662F; admin</p>
-<p>Brook-Web&#x867D;&#x7136;&#x7B80;&#x5355;&#x6613;&#x7528;&#xFF0C;&#x7136;&#x800C;&#x7A0B;&#x5E8F;&#x4F9D;&#x7136;&#x4E0D;&#x592A;&#x7A33;&#x5B9A;&#xFF0C;&#x5EFA;&#x8BAE;&#x8BFB;&#x8005;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#x3002;</p>
-<h3 id="22-&#x5BA2;&#x6237;&#x7AEF;"><a name="22-&#x5BA2;&#x6237;&#x7AEF;" class="plugin-anchor" href="#22-&#x5BA2;&#x6237;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x5BA2;&#x6237;&#x7AEF;</h3>
-<p>Brook&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;
-<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.exe" target="_blank">Windows</a>/
-<a href="https://github.com/txthinking/brook/releases/download/v20181212/brook" target="_blank">Linux</a>/
-<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.dmg" target="_blank">mac OS</a>/
-<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.apk" target="_blank">Android</a>/
-<a href="https://itunes.apple.com/us/app/brook-brook-shadowsocks-vpn-proxy/id1216002642" target="_blank">iOS</a>
- &#x8986;&#x76D6;&#x5168;&#x5E73;&#x53F0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
-<p><img src="../../img/part4/brook.jpg" alt="brook&#x624B;&#x673A;&#x7AEF;"> </p>
+<p>&#x627E;&#x5230;&#x5F62;&#x5982; <code>tg://proxy?server=xxx&amp;port=443&amp;secret=xxx</code>&#x7684;&#x90E8;&#x5206;&#x5C31;&#x662F;&#x4EE3;&#x7406;&#x4FE1;&#x606F;&#x3002;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x670D;&#x52A1;&#x5668;&#xFF08;server)&#xFF0C;&#x7AEF;&#x53E3;(port),&#x5BC6;&#x94A5;(secret)&#x4E09;&#x90E8;&#x5206;&#xFF0C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x6DFB;&#x52A0;MTProxy&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4E0D;&#x540C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6DFB;&#x52A0;&#x4EE3;&#x7406;&#x7684;&#x5165;&#x53E3;&#x6709;&#x9501;&#x533A;&#x522B;&#xFF0C;&#x4E00;&#x822C;&#x5728;<code>Privacy and Security</code>&#x6216; <code>Data and Storage</code>&#x8BBE;&#x7F6E;&#x4E2D;&#x627E;&#x5230;<code>Use Proxy</code>&#x6DFB;&#x52A0;&#x4EE3;&#x7406;&#x3002;</p>
+<p>&#x81F3;&#x6B64;&#xFF0C;&#x5373;&#x53EF;&#x5728;<strong>&#x4E0D;&#x7FFB;&#x5899;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;Telegram</strong>&#x4E86;&#x3002;</p>
+<p><img src="../img/part4/tg.jpg" alt="&#x8BBE;&#x7F6E;TG&#x4EE3;&#x7406;"></p>
 <footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2018-12-08 20:53:03
+2018-12-08 21:42:57
 </span></footer>
                                 
                                 </section>
@@ -714,14 +624,10 @@ $ docker run --net<span class="token operator">=</span>host -d capton/brook-web 
 
             
                 
-                <a href="v2ray.html" class="navigation navigation-prev " aria-label="Previous page: 3. V2Ray">
+                <a href="brook.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4. Brook">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="tg.html" class="navigation navigation-next " aria-label="Next page: 5. Telegram">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -730,7 +636,7 @@ $ docker run --net<span class="token operator">=</span>host -d capton/brook-web 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. Brook","level":"5.4","depth":1,"next":{"title":"5. Telegram","level":"5.5","depth":1,"path":"part4/tg.md","ref":"part4/tg.md","articles":[]},"previous":{"title":"3. V2Ray","level":"5.3","depth":1,"path":"part4/v2ray.md","ref":"part4/v2ray.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part4/brook.md","mtime":"2018-12-08T12:53:03.142Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T13:00:36.323Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5. Telegram","level":"5.5","depth":1,"previous":{"title":"4. Brook","level":"5.4","depth":1,"path":"part4/brook.md","ref":"part4/brook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part4/tg.md","mtime":"2018-12-08T13:42:57.478Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T13:00:36.323Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
