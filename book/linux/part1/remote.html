@@ -1,0 +1,956 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5. 远程管理 · Linux-运维之美</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part2/ftp.html" />
+    
+    
+    <link rel="prev" href="maintenance.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="directive.html">
+            
+                <a href="directive.html">
+            
+                    
+                    1. Linux命令简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="filemg/index.md">
+            
+                <span>
+            
+                    
+                    2. 文件目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="filemg/directory.html">
+            
+                <a href="filemg/directory.html">
+            
+                    
+                    2.1 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="filemg/view.html">
+            
+                <a href="filemg/view.html">
+            
+                    
+                    2.2 查看文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="filemg/mkrm.html">
+            
+                <a href="filemg/mkrm.html">
+            
+                    
+                    2.3 新建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="filemg/cpmv.html">
+            
+                <a href="filemg/cpmv.html">
+            
+                    
+                    2.4 拷贝/移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="filemg/find.html">
+            
+                <a href="filemg/find.html">
+            
+                    
+                    2.5 搜索/重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="filemg/link.html">
+            
+                <a href="filemg/link.html">
+            
+                    
+                    2.6 文件链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="filemg/compress.html">
+            
+                <a href="filemg/compress.html">
+            
+                    
+                    2.7 打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="filemg/vim.html">
+            
+                <a href="filemg/vim.html">
+            
+                    
+                    2.8 vi/vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="permission/index.md">
+            
+                <span>
+            
+                    
+                    3. 权限管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="permission/usermg.html">
+            
+                <a href="permission/usermg.html">
+            
+                    
+                    3.1 用户(组)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="permission/permission.html">
+            
+                <a href="permission/permission.html">
+            
+                    
+                    3.2 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="maintenance.html">
+            
+                <a href="maintenance.html">
+            
+                    
+                    4. 系统维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="remote.html">
+            
+                <a href="remote.html">
+            
+                    
+                    5. 远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - 常用环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part2/ftp.html">
+            
+                <a href="../part2/ftp.html">
+            
+                    
+                    1. FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../part2/mysql.html">
+            
+                <a href="../part2/mysql.html">
+            
+                    
+                    2. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../part2/nginx.html">
+            
+                <a href="../part2/nginx.html">
+            
+                    
+                    3. Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../part2/gui.html">
+            
+                <a href="../part2/gui.html">
+            
+                    
+                    4. 界面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ Linux编程</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part IV - 科学上网</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part4/crossgfw.html">
+            
+                <a href="../part4/crossgfw.html">
+            
+                    
+                    1. 科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../part4/wg.html">
+            
+                <a href="../part4/wg.html">
+            
+                    
+                    2. WireGuard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../part4/v2ray.html">
+            
+                <a href="../part4/v2ray.html">
+            
+                    
+                    3. V2Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../part4/brook.html">
+            
+                <a href="../part4/brook.html">
+            
+                    
+                    4. Brook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5. 远程管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;"><a name="linux&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;" class="plugin-anchor" href="#linux&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>logout [n]</code></td>
+<td style="text-align:left">&#x6CE8;&#x9500;&#x767B;&#x5F55;&#x7684;shell&#x3002;&#x4E0D;&#x5728;shell&#x6267;&#x884C;&#x62A5;&#x9519;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#1-shutdown&#x547D;&#x4EE4;"><code>shutdown [-options] [time]</code></a></td>
+<td style="text-align:left">&#x5173;&#x673A;/&#x91CD;&#x542F;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#2-ifconfig&#x547D;&#x4EE4;"><code>ifconfig [-options]</code></a></td>
+<td style="text-align:left">&#x67E5;&#x770B;&#x6216;&#x914D;&#x7F6E;&#x7F51;&#x5361;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#3-ping&#x547D;&#x4EE4;"><code>ping [-options] destination</code></a></td>
+<td style="text-align:left">&#x68C0;&#x6D4B;&#x5230;&#x76EE;&#x6807;&#x5730;&#x5740;&#x8FDE;&#x63A5;&#x901A;&#x8BAF;&#x662F;&#x5426;&#x6B63;&#x5E38;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#4-ssh&#x547D;&#x4EE4;"><code>ssh [-options] [user@hostname]</code></a></td>
+<td style="text-align:left">&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#5-scp&#x547D;&#x4EE4;"><code>scp [-options] [[user@]host1:]file1 [[user@]host2:]file2</code></a></td>
+<td style="text-align:left">&#x8FDC;&#x7A0B;&#x590D;&#x5236;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-shutdown&#x547D;&#x4EE4;"><a name="1-shutdown&#x547D;&#x4EE4;" class="plugin-anchor" href="#1-shutdown&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. shutdown&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">shutdown</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token punctuation">[</span>time<span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li><code>shutdown</code>&#x547D;&#x4EE4;&#x4E00;&#x822C;&#x9700;&#x8981;root&#x6743;&#x9650;&#x6267;&#x884C;</li>
+<li>&#x8FDC;&#x7A0B;&#x7EF4;&#x62A4;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;(&#x5173;&#x95ED;&#x540E;&#x542F;&#x52A8;&#x4E0D;&#x65B9;&#x4FBF;)&#xFF0C;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x91CD;&#x542F;&#x7CFB;&#x7EDF;</li>
+</ul>
+<h4 id="1-options"><a name="1-options" class="plugin-anchor" href="#1-options"><i class="fa fa-link" aria-hidden="true"></i></a>1) options</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x7F3A;&#x7701;</td>
+<td style="text-align:left">&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x4E3A;&#x5173;&#x673A;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-r</code></td>
+<td style="text-align:left">&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x3002;<code>shutdown -r now</code> &#x7B49;&#x4EF7;&#x4E8E; <code>reboot</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-c</code></td>
+<td style="text-align:left">&#x53D6;&#x6D88;&#x4EE3;&#x6267;&#x884C;&#x7684;&#x5173;&#x673A;&#x6216;&#x91CD;&#x542F;&#x4EFB;&#x52A1;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x5173;&#x673A;&#x6216;&#x91CD;&#x542F;&#x4E4B;&#x524D;&#x6267;&#x884C;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-time"><a name="2-time" class="plugin-anchor" href="#2-time"><i class="fa fa-link" aria-hidden="true"></i></a>2) time</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x7F3A;&#x7701;</td>
+<td style="text-align:left">&#x9ED8;&#x8BA4;&#x4E3A;1&#x5206;&#x949F;&#x540E;&#x6267;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>+m</code></td>
+<td style="text-align:left"><code>m</code>&#x5206;&#x949F;&#x540E;&#x6267;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>now</code></td>
+<td style="text-align:left">&#x73B0;&#x5728;&#x7ACB;&#x5373;&#x6267;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hh:mm</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x6267;&#x884C;,&#x53EA;&#x80FD;&#x8BBE;&#x7F6E;&#x5C0F;&#x65F6;&#x548C;&#x5206;&#x949F;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># 1&#x5206;&#x949F;&#x540E;&#x5173;&#x673A;</span>
+$ <span class="token function">shutdown</span>
+
+<span class="token comment"># &#x7ACB;&#x5373;&#x91CD;&#x542F;</span>
+$ <span class="token function">shutdown</span> -r now
+
+<span class="token comment"># 10&#x5206;&#x949F;&#x540E;&#x5173;&#x673A;</span>
+$ <span class="token function">shutdown</span> +10
+
+<span class="token comment"># &#x4ECA;&#x5929;20:30 &#x91CD;&#x542F;</span>
+$ <span class="token function">shutdown</span> -r 20:30
+
+<span class="token comment"># &#x53D6;&#x6D88;&#x5173;&#x673A;&#x6216;&#x91CD;&#x542F;&#x4EFB;&#x52A1;</span>
+$ <span class="token function">shutdown</span> -c
+</code></pre>
+<h2 id="2-ifconfig&#x547D;&#x4EE4;"><a name="2-ifconfig&#x547D;&#x4EE4;" class="plugin-anchor" href="#2-ifconfig&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>2. ifconfig&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">ifconfig</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li>&#x5982;&#x679C;&#x547D;&#x4EE4;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x8FDB;&#x884C;&#x5B89;&#x88C5;<code>sudo apt install net-tools</code></li>
+<li>&#x4E00;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x7F51;&#x5361;&#x548C;&#x591A;&#x4E2A;&#x865A;&#x62DF;&#x7F51;&#x5361;&#xFF0C;&#x5728;Linux&#x4E2D;&#x7269;&#x7406;&#x7F51;&#x5361;&#x540D;&#x5B57;&#x901A;&#x5E38;&#x4E3A;<code>ensXX</code></li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x67E5;&#x770B;&#x7F51;&#x5361;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</span>
+$ <span class="token function">ifconfig</span>
+
+<span class="token comment"># &#x8FC7;&#x6EE4;&#x67E5;&#x770B;IP&#x5730;&#x5740;</span>
+$ <span class="token function">ifconfig</span> <span class="token operator">|</span> <span class="token function">grep</span> inet
+</code></pre>
+<h2 id="3-ping&#x547D;&#x4EE4;"><a name="3-ping&#x547D;&#x4EE4;" class="plugin-anchor" href="#3-ping&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>3. ping&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">ping</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> destination
+</code></pre>
+<ul>
+<li><code>ping</code>&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x5F53;&#x524D;&#x8BA1;&#x7B97;&#x673A;&#x5230;&#x76EE;&#x6807;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x662F;&#x5426;&#x901A;&#x7545;&#x3002;&#x6211;&#x4EEC;&#x7ED9;&#x76EE;&#x6807;IP&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x5BF9;&#x65B9;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#xFF0C;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x5305;&#x7684;&#x65F6;&#x95F4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x76EE;&#x6807;&#x8BA1;&#x7B97;&#x673A;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5E76;&#x4E14;&#x5DE5;&#x4F5C;&#x6B63;&#x5E38;&#x4EE5;&#x53CA;&#x7F51;&#x7EDC;&#x94FE;&#x63A5;&#x901F;&#x5EA6;&#x3002;</li>
+<li>Linux&#x4E2D;<code>ping</code>&#x547D;&#x4EE4;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x505C;&#x6B62;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>Ctrl + C</code>&#x9000;&#x51FA;&#x3002;</li>
+<li><code>ping 127.0.0.1</code> &#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x672C;&#x673A;&#x7F51;&#x5361;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C; </li>
+</ul>
+<h2 id="4-ssh&#x547D;&#x4EE4;"><a name="4-ssh&#x547D;&#x4EE4;" class="plugin-anchor" href="#4-ssh&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>4. ssh&#x547D;&#x4EE4;</h2>
+<h3 id="41-ssh&#x57FA;&#x7840;&#x4F7F;&#x7528;"><a name="41-ssh&#x57FA;&#x7840;&#x4F7F;&#x7528;" class="plugin-anchor" href="#41-ssh&#x57FA;&#x7840;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 ssh&#x57FA;&#x7840;&#x4F7F;&#x7528;</h3>
+<ul>
+<li>ssh&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x4E00;&#x79CD;&#x4F7F;&#x7528;<code>Secure Shell(ssh)</code>&#x534F;&#x8BAE;&#x8FDE;&#x63A5;&#x5230;&#x8FD0;&#x884C;&#x4E86;ssh&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x3002;</li>
+<li>ssh&#x662F;&#x76EE;&#x524D;&#x8F83;&#x53EF;&#x9760;&#xFF0C;&#x4E13;&#x4E3A;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x4F1A;&#x8BDD;&#x548C;&#x5176;&#x4ED6;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x5B89;&#x5168;&#x6027;&#x7684;&#x534F;&#x8BAE;<ul>
+<li>&#x6709;&#x6548;&#x9632;&#x6B62;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x6CC4;&#x6F0F;</li>
+<li>&#x4F20;&#x8F93; <strong>&#x6570;&#x636E;&#x52A0;&#x5BC6;</strong>&#xFF0C;&#x80FD;&#x591F;&#x9632;&#x6B62;DNS&#x548C;IP&#x6B3A;&#x9A97;</li>
+<li>&#x4F20;&#x8F93; <strong>&#x6570;&#x636E;&#x538B;&#x7F29;</strong>&#xFF0C;&#x52A0;&#x5FEB;&#x4F20;&#x8F93;&#x901F;&#x5EA6;</li>
+</ul>
+</li>
+<li>Mac&#x548C;Linux&#x4E2D;&#x9ED8;&#x8BA4;&#x5DF2;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x4F7F;&#x7528;ssh&#x547D;&#x4EE4;&#x3002;Windows&#x5219;&#x9700;&#x624B;&#x52A8;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x8F83;&#x5E38;&#x7528;&#x7684;Windows SSH&#x5BA2;&#x6237;&#x7AEF;&#x6709;<code>PuTTY</code>&#x548C;<code>XShell</code></li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">ssh</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token punctuation">[</span>user@hostname<span class="token punctuation">]</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-p</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;ssh&#x7AEF;&#x53E3;&#x53F7;,&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x4E3A;<code>22</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-i</code></td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;(<a href="#2-&#x514D;&#x5BC6;&#x767B;&#x5F55;">&#x514D;&#x5BC6;&#x767B;&#x5F55;</a>)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>user</code>&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x7528;&#x6237;</li>
+<li><code>hostname</code>&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;&#x53EF;&#x4EE5;&#x662F;IP/&#x57DF;&#x540D;/&#x522B;&#x540D;</li>
+<li><code>exit</code>&#x6216;<code>logout</code>&#x547D;&#x4EE4;&#x5747;&#x53EF;&#x9000;&#x51FA;&#x5F53;&#x524D;&#x767B;&#x5F55;</li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x4EE5;colin&#x7528;&#x6237;&#x767B;&#x5F55;192.168.1.196&#x7684;&#x5230;ssh&#x670D;&#x52A1;&#x5668;</span>
+$ <span class="token function">ssh</span> colin@192.168.1.196
+
+<span class="token comment"># &#x4EE5;colin&#x7528;&#x6237;&#x767B;&#x5F55;&#x5230;192.168.1.198&#x7684;ssh&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F7F;&#x7528;2222&#x7AEF;&#x53E3;</span>
+$ <span class="token function">ssh</span> -p 2222 colin@192.168.1.198
+</code></pre>
+<h3 id="42-ssh&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;"><a name="42-ssh&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;" class="plugin-anchor" href="#42-ssh&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 ssh&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;</h3>
+<p>ssh&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x90FD;&#x4FDD;&#x5B58;&#x5728;<code>~/.ssh</code> &#x4E2D;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">known_hosts</td>
+<td style="text-align:left">&#x4F5C;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x8BB0;&#x5F55;&#x66FE;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x6388;&#x6743;&#x3002;ssh&#x7B2C;&#x4E00;&#x6B21;&#x8FDE;&#x63A5;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x6388;&#x6743;&#x63D0;&#x793A;&#xFF0C;&#x786E;&#x8BA4;&#x6388;&#x6743;&#x540E;&#x4F1A;&#x8BB0;&#x5F55;&#x5728;&#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0B;&#x6B21;&#x8FDE;&#x63A5;&#x8BB0;&#x5F55;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x5219;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6388;&#x6743;&#x786E;&#x8BA4;&#x63D0;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:left">authorized_keys</td>
+<td style="text-align:left">&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x7AEF;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x514D;&#x5BC6;&#x8FDE;&#x63A5;&#x516C;&#x94A5;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">config</td>
+<td style="text-align:left">&#x4F5C;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x8BB0;&#x5F55;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x7684;&#x522B;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-&#x670D;&#x52A1;&#x5668;&#x522B;&#x540D;"><a name="1-&#x670D;&#x52A1;&#x5668;&#x522B;&#x540D;" class="plugin-anchor" href="#1-&#x670D;&#x52A1;&#x5668;&#x522B;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>1) &#x670D;&#x52A1;&#x5668;&#x522B;&#x540D;</h4>
+<p>&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x547D;&#x4EE4;(&#x5982;ssh,scp&#x7B49;)&#x8FDE;&#x63A5;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x4E00;&#x822C;&#x90FD;&#x9700;&#x8981;&#x63D0;&#x4F9B; &#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3001;&#x7AEF;&#x53E3;&#x3001;&#x7528;&#x6237;&#x540D; &#xFF0C;&#x6BCF;&#x6B21;&#x8F93;&#x5165;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#x53C2;&#x6570;&#x6253;&#x5305;&#x8BB0;&#x5F55;&#x5230;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5E76;&#x4E3A;&#x5176;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x6613;&#x8BB0;&#x7684;&#x522B;&#x540D;&#x3002;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x522B;&#x540D;&#x65B9;&#x4FBF;&#x7684;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x5730;&#x5740;&#x3001;&#x7AEF;&#x53E3;&#x3001;&#x7528;&#x6237;&#x540D;&#x7B49;&#x4FE1;&#x606F;&#x4E86;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x6216;&#x6253;&#x5F00; <code>~/.ssh/config</code>&#xFF0C;&#x5728;&#x6587;&#x4EF6;&#x8FFD;&#x52A0;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</li>
+<li>&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x683C;&#x5F0F;&#x5982;&#x4E0B;<pre class="language-"><code class="lang-json">Host ColinMac
+  HostName <span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.196</span>
+  User colin
+  Port <span class="token number">22</span>
+</code></pre>
+&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x547D;&#x4EE4;&#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x522B;&#x540D;&#x8BBF;&#x95EE;&#x4E86;&#xFF0C;&#x5982;<pre class="language-"><code class="lang-sh">$ <span class="token function">ssh</span> ColinMac
+$ <span class="token function">scp</span> 123.txt ColinMac:Desktop
+</code></pre>
+</li>
+</ul>
+<h4 id="2-&#x514D;&#x5BC6;&#x767B;&#x5F55;"><a name="2-&#x514D;&#x5BC6;&#x767B;&#x5F55;" class="plugin-anchor" href="#2-&#x514D;&#x5BC6;&#x767B;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>2) &#x514D;&#x5BC6;&#x767B;&#x5F55;</h4>
+<pre class="language-"><code># &#x547D;&#x4EE4;&#x683C;&#x5F0F;
+$ ssh-keygen [-options]
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-t</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x52A0;&#x5BC6;&#x7C7B;&#x578B;,&#x9ED8;&#x8BA4;&#x4E3A;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;(<code>rsa</code>), &#x6240;&#x6709;&#x53EF;&#x9009;&#x9879;<code>[dsa,ecdsa,ed25519,rsa]</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-f</code></td>
+<td style="text-align:left">&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x540D;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-C</code></td>
+<td style="text-align:left">&#x6CE8;&#x91CA;&#xFF0C;&#x5C06;&#x9644;&#x52A0;&#x5728;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x5C3E;&#x90E8;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x547D;&#x4EE4;(&#x5982;ssh,scp&#x7B49;)&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x914D;&#x7F6E;&#x4F7F;&#x6307;&#x5B9A;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x9A8C;&#x8BC1;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x907F;&#x514D;&#x6BCF;&#x6B21;&#x8F93;&#x5165;&#x5BC6;&#x7801;</li>
+<li>&#x914D;&#x7F6E;&#x514D;&#x5BC6;&#x767B;&#x5F55;&#x540E;&#xFF0C;ssh&#x8FDE;&#x63A5;&#x548C;scp&#x7B49;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x547D;&#x4EE4;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8F93;&#x5BC6;&#x7801;</li>
+<li>&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x65F6;&#x82E5;&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>-i</code>&#x6307;&#x5B9A;&#x8981;&#x9A8C;&#x8BC1;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;,&#x5F62;&#x5982;&#xFF1A;<code>ssh -i file user@host</code>&#x3002;&#x9ED8;&#x8BA4;&#x6587;&#x4EF6;&#x540D;&#x5219;&#x53EF;&#x7701;&#x7565;</li>
+<li>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x53EA;&#x9700;&#x4EE5;&#x4E0B;&#x4E24;&#x6B65;&#xFF1A;</li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5BA2;&#x6237;&#x7AEF;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;</span>
+$ ssh-keygen
+
+<span class="token comment"># &#x4E0A;&#x4F20;&#x516C;&#x94A5;&#x5230;&#x670D;&#x52A1;&#x5668;</span>
+$ ssh-copy-id user@hostname   <span class="token comment"># &#x6587;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x4E0A;&#x4F20;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7279;&#x5B9A;&#x6587;&#x4EF6; &#xFF5E;/.ssh/authorized_keys</span>
+</code></pre>
+<blockquote>
+<p>Google Cloud &#x5BC6;&#x94A5;&#x94FE;&#x63A5;</p>
+</blockquote>
+<p>&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x8003;&#x8651;&#xFF0C;GCP(Google Cloud Platform)&#x7684;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x9700;&#x8981;&#x4EBA;&#x5DE5;&#x586B;&#x5199;&#x5230;&#x5E73;&#x53F0;&#x7684;<code>&#x5143;&#x6570;&#x636E;</code>&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;&#x4E14;GCP&#x53EA;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x9A8C;&#x8BC1;&#x767B;&#x5F55;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x4EE5;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;my-ssh-key&#x4FDD;&#x5B58;&#x5230;~/.ssh&#x76EE;&#x5F55;&#x4E0B;&#x3002;</span>
+<span class="token comment"># &#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x4EE5;colin(&#x5C06;&#x4F5C;&#x4E3A;GCP&#x7684;&#x7528;&#x6237;&#x540D;)&#x4F5C;&#x4E3A;&#x6CE8;&#x91CA;</span>
+
+$ ssh-keygen -t rsa -f ~/.ssh/my-ssh-key -C colin
+
+<span class="token comment"># &#x8FDE;&#x63A5;GCP</span>
+$ <span class="token function">ssh</span> -i ~/.ssh/my-ssh-key colin@35.236.93.139
+</code></pre>
+<h2 id="5-scp&#x547D;&#x4EE4;"><a name="5-scp&#x547D;&#x4EE4;" class="plugin-anchor" href="#5-scp&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>5. scp&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">scp</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>user@<span class="token punctuation">]</span>host1:<span class="token punctuation">]</span>file1 <span class="token punctuation">[</span><span class="token punctuation">[</span>user@<span class="token punctuation">]</span>host2:<span class="token punctuation">]</span>file2
+</code></pre>
+<ul>
+<li><code>scp</code>&#x662F;secure copy&#x7F29;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;Linux&#x4E2D;&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;.&#x4EE5;ssh&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x4E66;&#x5199;&#x8FDC;&#x7A0B;&#x5730;&#x5740;&#xFF0C;&#x62F7;&#x8D1D;&#x4E8E;<code>cp</code>&#x547D;&#x4EE4;&#x7C7B;&#x4F3C;&#x3002;</li>
+<li><code>scp</code>&#x547D;&#x4EE4;&#x53EA;&#x80FD;&#x5728;Unix&#x5185;&#x6838;&#x7CFB;&#x7EDF;(&#x5982;Linux/mac OS) &#x4E2D;&#x8FD0;&#x884C;&#x3002;&#x5728;Windows&#x4E2D;&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x63A8;&#x8350;&#x4F7F;&#x7528;FTP&#x5DE5;&#x5177;,&#x5982;FileZilla</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-r</code></td>
+<td style="text-align:left">&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x6216;&#x9012;&#x5F52;&#x62F7;&#x8D1D;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-P</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x9ED8;&#x8BA4;22&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x7701;&#x7565;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5C06;&#x672C;&#x5730;123.txt&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;&#x5230;192.168.1.196&#x670D;&#x52A1;&#x5668;&#x7684;colin&#x7528;&#x6237;&#x7684;Desktop&#x76EE;&#x5F55;&#x5E76;&#x91CD;&#x547D;&#x540D;&#x4E3A;test.txt</span>
+$ <span class="token function">scp</span> 123.txt colin@192.168.1.196:Desktop/test.txt
+
+<span class="token comment"># &#x5C06;192.168.1.196&#x670D;&#x52A1;&#x5668;&#x7684;colin&#x7528;&#x6237;&#x7684;Desktop/test.txt&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;&#x5230;&#x672C;&#x5730;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x5E76;&#x91CD;&#x547D;&#x540D;&#x4E3A;123.txt</span>
+$ <span class="token function">scp</span> conlin@192.168.1.196:Desktop/test.txt 123.txt
+
+<span class="token comment"># &#x5C06;&#x672C;&#x5730;~/Desktop/Python&#x62F7;&#x8D1D;&#x5230;192.168.1.196&#x670D;&#x52A1;&#x5668;&#x7684;colin&#x7528;&#x6237;&#x7684;Desktop&#x76EE;&#x5F55;&#x4E0B;</span>
+$ <span class="token function">scp</span> -r ~/Desktop/Python colin@192.168.1.196:Desktop
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-11-02 13:28:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="maintenance.html" class="navigation navigation-prev " aria-label="Previous page: 4. 系统维护">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part2/ftp.html" class="navigation navigation-next " aria-label="Next page: 1. FTP">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. 远程管理","level":"2.5","depth":1,"next":{"title":"1. FTP","level":"3.1","depth":1,"path":"part2/ftp.md","ref":"part2/ftp.md","articles":[]},"previous":{"title":"4. 系统维护","level":"2.4","depth":1,"path":"part1/maintenance.md","ref":"part1/maintenance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part1/remote.md","mtime":"2018-11-02T05:28:12.354Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T11:46:16.381Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

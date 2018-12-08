@@ -78,14 +78,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "蝉翼科技",
-        href: "http://chanyikeji.com/"
-    },{
         title: "Google hosts",
         href: "https://laod.cn/hosts/2016-google-hosts.html"
-    },{
-        title: "FreeVPNSS",
-        href: "https://freevpnss.cc/"
     },{
         title: "TypeScript",
         href: "http://www.tslang.cn/docs/tutorial.html"

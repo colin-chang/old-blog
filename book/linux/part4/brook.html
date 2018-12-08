@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Brook · Linux-运维之美</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="v2ray.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part1/directive.html">
+            
+                <a href="../part1/directive.html">
+            
+                    
+                    1. Linux命令简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part1/filemg/index.md">
+            
+                <span>
+            
+                    
+                    2. 文件目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../part1/filemg/directory.html">
+            
+                <a href="../part1/filemg/directory.html">
+            
+                    
+                    2.1 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../part1/filemg/view.html">
+            
+                <a href="../part1/filemg/view.html">
+            
+                    
+                    2.2 查看文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../part1/filemg/mkrm.html">
+            
+                <a href="../part1/filemg/mkrm.html">
+            
+                    
+                    2.3 新建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../part1/filemg/cpmv.html">
+            
+                <a href="../part1/filemg/cpmv.html">
+            
+                    
+                    2.4 拷贝/移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../part1/filemg/find.html">
+            
+                <a href="../part1/filemg/find.html">
+            
+                    
+                    2.5 搜索/重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../part1/filemg/link.html">
+            
+                <a href="../part1/filemg/link.html">
+            
+                    
+                    2.6 文件链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../part1/filemg/compress.html">
+            
+                <a href="../part1/filemg/compress.html">
+            
+                    
+                    2.7 打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../part1/filemg/vim.html">
+            
+                <a href="../part1/filemg/vim.html">
+            
+                    
+                    2.8 vi/vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part1/permission/index.md">
+            
+                <span>
+            
+                    
+                    3. 权限管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../part1/permission/usermg.html">
+            
+                <a href="../part1/permission/usermg.html">
+            
+                    
+                    3.1 用户(组)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../part1/permission/permission.html">
+            
+                <a href="../part1/permission/permission.html">
+            
+                    
+                    3.2 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part1/maintenance.html">
+            
+                <a href="../part1/maintenance.html">
+            
+                    
+                    4. 系统维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part1/remote.html">
+            
+                <a href="../part1/remote.html">
+            
+                    
+                    5. 远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - 常用环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part2/ftp.html">
+            
+                <a href="../part2/ftp.html">
+            
+                    
+                    1. FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../part2/mysql.html">
+            
+                <a href="../part2/mysql.html">
+            
+                    
+                    2. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../part2/nginx.html">
+            
+                <a href="../part2/nginx.html">
+            
+                    
+                    3. Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../part2/gui.html">
+            
+                <a href="../part2/gui.html">
+            
+                    
+                    4. 界面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ Linux编程</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part IV - 科学上网</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="crossgfw.html">
+            
+                <a href="crossgfw.html">
+            
+                    
+                    1. 科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="wg.html">
+            
+                <a href="wg.html">
+            
+                    
+                    2. WireGuard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="v2ray.html">
+            
+                <a href="v2ray.html">
+            
+                    
+                    3. V2Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4" data-path="brook.html">
+            
+                <a href="brook.html">
+            
+                    
+                    4. Brook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. Brook</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook"><a name="&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook" class="plugin-anchor" href="#&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6;-&#x2014;-brook"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x4F17;&#x597D;&#x7528;&#x7684;&#x4EE3;&#x7406;&#x8F6F;&#x4EF6; &#x2014; Brook</h1>
+<h2 id="1-brook&#x7B80;&#x4ECB;"><a name="1-brook&#x7B80;&#x4ECB;" class="plugin-anchor" href="#1-brook&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Brook&#x7B80;&#x4ECB;</h2>
+<p><a href="https://github.com/txthinking/brook" target="_blank">Brook</a> &#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6548;&#x7684; Socks5 &#x4EE3;&#x7406;&#x8F6F;&#x4EF6;&#xFF0C;&#x5B98;&#x65B9;&#x652F;&#x6301;Windows&#x3001;Linux&#x3001;MacOS&#x3001;IOS&#x3001;Android&#x3001;&#x6811;&#x8393;&#x6D3E;&#x7B49;&#x8BBE;&#x5907;&#xFF0C;&#x540C;&#x65F6;&#x662F;&#x4F7F;&#x7528; Golang &#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x5B89;&#x88C5;&#x3001;&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
+<p>Brook &#x652F;&#x6301; &#x81EA;&#x4E3B;&#x7814;&#x53D1; Brook&#xFF08;&#x65B0;&#x7248;&#xFF09; &#x534F;&#x8BAE;+Stream Brook&#xFF08;&#x65E7;&#x7248;&#xFF09;&#x534F;&#x8BAE;&#x3001;Shadowsocks &#x534F;&#x8BAE;&#x3001;SOCKS5 &#x534F;&#x8BAE;&#x3001;TCP/UDP &#x8F6C;&#x53D1;&#x3001;SOCKS5&#x4EE3;&#x7406;&#x8F6C;HTTP&#x4EE3;&#x7406; &#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<p>Brook &#x652F;&#x6301; UDP&#x8F6C;&#x53D1;&#xFF0C;&#x65E0;&#x9700;&#x4EFB;&#x4F55;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x5355;&#x7AEF;&#x53E3;&#x548C;&#x591A;&#x7AEF;&#x53E3;(&#x6BCF;&#x4E2A;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x8BBE;&#x5B9A;&#x5BC6;&#x7801;)&#xFF0C;&#x8FD9;&#x70B9;&#x7C7B;&#x4F3C;&#x4E8E; Shadowsocks &#x548C; ShadowsocksR &#x7684;&#x5355;&#x7528;&#x6237;&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
+<h2 id="2-brook&#x4E0A;&#x624B;"><a name="2-brook&#x4E0A;&#x624B;" class="plugin-anchor" href="#2-brook&#x4E0A;&#x624B;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Brook&#x4E0A;&#x624B;</h2>
+<h3 id="21-&#x670D;&#x52A1;&#x7AEF;"><a name="21-&#x670D;&#x52A1;&#x7AEF;" class="plugin-anchor" href="#21-&#x670D;&#x52A1;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x670D;&#x52A1;&#x7AEF;</h3>
+<p>&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4F9B;&#x7684;Brook&#x8282;&#x70B9;&#x5916;&#xFF0C;&#x76F8;&#x4FE1;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5DF2;&#x7ECF;&#x8FEB;&#x4E0D;&#x53CA;&#x5F85;&#x7684;&#x60F3;&#x81EA;&#x5EFA;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5C0F;&#x8BD5;&#x8EAB;&#x624B;&#x4E86;&#xFF0C;&#x8BDD;&#x4E0D;&#x591A;&#x8BF4;&#xFF0C;&#x8FD9;&#x5C31;&#x64CD;&#x7EC3;&#x8D77;&#x6765;&#x5427;...</p>
+<p>Brook&#x670D;&#x52A1;&#x7AEF;&#x652F;&#x6301;Linux/mac OS/Windows&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x8FD8;&#x662F;&#x9009;&#x62E9;&#x4EE5;Linux&#x4E3A;&#x4F8B;&#x3002;</p>
+<h4 id="211-&#x5B98;&#x65B9;&#x811A;&#x672C;"><a name="211-&#x5B98;&#x65B9;&#x811A;&#x672C;" class="plugin-anchor" href="#211-&#x5B98;&#x65B9;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1 &#x5B98;&#x65B9;&#x811A;&#x672C;</h4>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5207;&#x6362;&#x5230;root</span>
+$ <span class="token function">sudo</span> -i
+<span class="token comment"># &#x6821;&#x51C6;&#x65F6;&#x95F4;</span>
+$ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+<span class="token comment"># &#x5B89;&#x88C5;&#x5B98;&#x65B9;&#x811A;&#x672C;&#x3002; &#x6700;&#x65B0;&#x7248;&#x811A;&#x672C;&#x5730;&#x5740;&#x53EF;&#x4EE5;&#x4ECE;&#x5B98;&#x65B9; https://github.com/txthinking/brook/releases</span>
+$ <span class="token function">wget</span> https://github.com/txthinking/brook/releases/download/v20181212/brook
+$ <span class="token function">chmod</span> -R 744 brook
+$ ./brook
+
+<span class="token comment"># &#x4EE5;&#x670D;&#x52A1;&#x65B9;&#x5F0F;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x3002;&#x4E0D;&#x540C;&#x53D1;&#x884C;&#x7248;Linux&#xFF0C;&#x547D;&#x4EE4;&#x4E0D;&#x540C;&#x6B64;&#x5904;&#x4EE5;Debian9&#x4E3A;&#x4F8B;</span>
+$ <span class="token function">screen</span> -dmS brook ./brook server -l :5468 -p xinzhe468brook <span class="token comment"># -l&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#xFF0C;-p&#x6307;&#x5B9A;&#x5BC6;&#x7801;</span>
+</code></pre>
+<h4 id="212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;"><a name="212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;" class="plugin-anchor" href="#212-&#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2 &#x7B2C;&#x4E09;&#x65B9;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C;</h4>
+<p>&#x6B64;&#x811A;&#x672C;&#x9664;&#x4E86;&#x4E00;&#x952E;&#x5B89;&#x88C5;Brook&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x7CFB;&#x7EDF;&#x8981;&#x6C42;&#xFF1A;CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5207;&#x6362;&#x5230;root</span>
+$ <span class="token function">sudo</span> -i
+<span class="token comment"># &#x6821;&#x51C6;&#x65F6;&#x95F4;</span>
+$ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+<span class="token comment"># &#x4E00;&#x952E;&#x5B89;&#x88C5;</span>
+$ <span class="token function">wget</span> -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/brook.sh <span class="token operator">&amp;&amp;</span> <span class="token function">chmod</span> +x brook.sh <span class="token operator">&amp;&amp;</span> <span class="token function">bash</span> brook.sh
+</code></pre>
+<p>&#x6309;&#x4E00;&#x4E0B;&#x63D0;&#x793A;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;</p>
+<pre class="language-"><code>0. &#x5347;&#x7EA7;&#x811A;&#x672C;
+&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
+ 1. &#x5B89;&#x88C5; Brook
+ 2. &#x5347;&#x7EA7; Brook
+ 3. &#x5378;&#x8F7D; Brook
+&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
+ 4. &#x542F;&#x52A8; Brook
+ 5. &#x505C;&#x6B62; Brook
+ 6. &#x91CD;&#x542F; Brook
+&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
+ 7. &#x8BBE;&#x7F6E; &#x8D26;&#x53F7;&#x914D;&#x7F6E;
+ 8. &#x67E5;&#x770B; &#x8D26;&#x53F7;&#x4FE1;&#x606F;
+ 9. &#x67E5;&#x770B; &#x65E5;&#x5FD7;&#x4FE1;&#x606F;
+10. &#x67E5;&#x770B; &#x94FE;&#x63A5;&#x4FE1;&#x606F;
+&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;
+
+ &#x5F53;&#x524D;&#x72B6;&#x6001;: &#x5DF2;&#x5B89;&#x88C5; &#x5E76; &#x5DF2;&#x542F;&#x52A8;
+
+ &#x8BF7;&#x8F93;&#x5165;&#x6570;&#x5B57; [0-10]:
+</code></pre><blockquote>
+<p>&#x5E38;&#x7528;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x64CD;&#x4F5C;</th>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x542F;&#x52A8;</td>
+<td style="text-align:left">/etc/init.d/brook start</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x505C;&#x6B62;</td>
+<td style="text-align:left">/etc/init.d/brook stop</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x91CD;&#x542F;</td>
+<td style="text-align:left">/etc/init.d/brook restart</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x67E5;&#x770B;&#x72B6;&#x6001;</td>
+<td style="text-align:left">/etc/init.d/brook status</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5B89;&#x88C5;&#x76EE;&#x5F55;</td>
+<td style="text-align:left">/usr/local/brook</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+<td style="text-align:left">/usr/local/brook/brook.conf</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</td>
+<td style="text-align:left">/usr/local/brook/brook.log&#xFF08;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="212-brook-web"><a name="212-brook-web" class="plugin-anchor" href="#212-brook-web"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2 Brook-Web</h4>
+<p>&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x547D;&#x4EE4;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4EE5;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;Brook&#xFF0C;&#x4F46;&#x76F8;&#x5BF9;&#x4E8E;GUI&#x6765;&#x8BF4;&#x4E0D;&#x662F;&#x592A;&#x597D;&#xFF0C;&#x4E0D;&#x9002;&#x5408;&#x5C0F;&#x767D;&#x7528;&#x6237;&#x3002;<a href="https://github.com/Ccapton/brook-web" target="_blank">Brook-Web</a>&#x9879;&#x76EE;&#x5C31;&#x4E00;&#x4E3E;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;Brook-Web&#x4F9D;&#x6258;&#x4E8E;Brook&#x4EE3;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x901A;&#x8FC7; Python &#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5728;&#x7F51;&#x9875;&#x7AEF;&#x7BA1;&#x7406; Brook&#x3001;Shadowsocks&#x3001;Socks5 &#x4EE3;&#x7406;&#x8D26;&#x53F7;&#x3002;</p>
+<p>&#x76F8;&#x6BD4;&#x4E0E;&#x5E38;&#x89C4;&#x90E8;&#x7F72;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x63A8;&#x8350;&#x4F7F;&#x7528;Docker&#x90E8;&#x7F72;&#x3002;</p>
+<pre class="language-"><code class="lang-sh">$ <span class="token function">sudo</span> -i
+$ <span class="token function">cp</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+<span class="token comment"># &#x5B89;&#x88C5;docker</span>
+$ <span class="token function">curl</span> -fsSL https://get.docker.com -o get-docker.sh
+$ <span class="token function">sudo</span> sh get-docker.sh
+
+<span class="token comment"># &#x8FD0;&#x884C;docker&#x955C;&#x50CF;</span>
+$ docker run --net<span class="token operator">=</span>host -d capton/brook-web /bin/bash -c <span class="token string">&quot;python brook-web.py 80&quot;</span>
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x6253;&#x5F00;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <a href="http://ip" target="_blank">http://ip</a> &#x5373;&#x53EF;&#x3002;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x9ED8;&#x8BA4;&#x90FD;&#x662F; admin</p>
+<p>Brook-Web&#x867D;&#x7136;&#x7B80;&#x5355;&#x6613;&#x7528;&#xFF0C;&#x7136;&#x800C;&#x7A0B;&#x5E8F;&#x4F9D;&#x7136;&#x4E0D;&#x592A;&#x7A33;&#x5B9A;&#xFF0C;&#x5EFA;&#x8BAE;&#x8BFB;&#x8005;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="22-&#x5BA2;&#x6237;&#x7AEF;"><a name="22-&#x5BA2;&#x6237;&#x7AEF;" class="plugin-anchor" href="#22-&#x5BA2;&#x6237;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x5BA2;&#x6237;&#x7AEF;</h3>
+<p>Brook&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;
+<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.exe" target="_blank">Windows</a>/
+<a href="https://github.com/txthinking/brook/releases/download/v20181212/brook" target="_blank">Linux</a>/
+<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.dmg" target="_blank">mac OS</a>/
+<a href="https://github.com/txthinking/brook/releases/download/v20181212/Brook.apk" target="_blank">Android</a>/
+<a href="https://itunes.apple.com/us/app/brook-brook-shadowsocks-vpn-proxy/id1216002642" target="_blank">iOS</a>
+ &#x8986;&#x76D6;&#x5168;&#x5E73;&#x53F0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
+<p><img src="../../img/part4/brook.jpg" alt="brook&#x624B;&#x673A;&#x7AEF;"> </p>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-07 15:28:21
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="v2ray.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3. V2Ray">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Brook","level":"5.4","depth":1,"previous":{"title":"3. V2Ray","level":"5.3","depth":1,"path":"part4/v2ray.md","ref":"part4/v2ray.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part4/brook.md","mtime":"2018-12-07T07:28:21.702Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T11:46:16.381Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

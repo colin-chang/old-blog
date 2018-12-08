@@ -1,0 +1,773 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.7 打包压缩 · Linux-运维之美</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vim.html" />
+    
+    
+    <link rel="prev" href="link.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../directive.html">
+            
+                <a href="../directive.html">
+            
+                    
+                    1. Linux命令简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="index.md">
+            
+                <span>
+            
+                    
+                    2. 文件目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="directory.html">
+            
+                <a href="directory.html">
+            
+                    
+                    2.1 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    2.2 查看文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="mkrm.html">
+            
+                <a href="mkrm.html">
+            
+                    
+                    2.3 新建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="cpmv.html">
+            
+                <a href="cpmv.html">
+            
+                    
+                    2.4 拷贝/移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="find.html">
+            
+                <a href="find.html">
+            
+                    
+                    2.5 搜索/重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="link.html">
+            
+                <a href="link.html">
+            
+                    
+                    2.6 文件链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.7" data-path="compress.html">
+            
+                <a href="compress.html">
+            
+                    
+                    2.7 打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="vim.html">
+            
+                <a href="vim.html">
+            
+                    
+                    2.8 vi/vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../permission/index.md">
+            
+                <span>
+            
+                    
+                    3. 权限管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../permission/usermg.html">
+            
+                <a href="../permission/usermg.html">
+            
+                    
+                    3.1 用户(组)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../permission/permission.html">
+            
+                <a href="../permission/permission.html">
+            
+                    
+                    3.2 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../maintenance.html">
+            
+                <a href="../maintenance.html">
+            
+                    
+                    4. 系统维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../remote.html">
+            
+                <a href="../remote.html">
+            
+                    
+                    5. 远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - 常用环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../part2/ftp.html">
+            
+                <a href="../../part2/ftp.html">
+            
+                    
+                    1. FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../part2/mysql.html">
+            
+                <a href="../../part2/mysql.html">
+            
+                    
+                    2. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../part2/nginx.html">
+            
+                <a href="../../part2/nginx.html">
+            
+                    
+                    3. Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../part2/gui.html">
+            
+                <a href="../../part2/gui.html">
+            
+                    
+                    4. 界面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ Linux编程</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part IV - 科学上网</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../part4/crossgfw.html">
+            
+                <a href="../../part4/crossgfw.html">
+            
+                    
+                    1. 科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../part4/wg.html">
+            
+                <a href="../../part4/wg.html">
+            
+                    
+                    2. WireGuard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../part4/v2ray.html">
+            
+                <a href="../../part4/v2ray.html">
+            
+                    
+                    3. V2Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../part4/brook.html">
+            
+                <a href="../../part4/brook.html">
+            
+                    
+                    4. Brook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.7 打包压缩</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6253;&#x5305;&#x538B;&#x7F29;"><a name="&#x6253;&#x5305;&#x538B;&#x7F29;" class="plugin-anchor" href="#&#x6253;&#x5305;&#x538B;&#x7F29;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6253;&#x5305;&#x538B;&#x7F29;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="#1-&#x6253;&#x5305;&#x89E3;&#x5305;"><code>tar [-options] [file]</code></a></td>
+<td style="text-align:left">&#x6253;&#x5305;&#x89E3;&#x5305;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#3-zipuzip"><code>zip [-options] [file]</code></a></td>
+<td style="text-align:left">&#x538B;&#x7F29;&#x6216;&#x89E3;&#x538B;zip&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-&#x6253;&#x5305;&#x89E3;&#x5305;"><a name="1-&#x6253;&#x5305;&#x89E3;&#x5305;" class="plugin-anchor" href="#1-&#x6253;&#x5305;&#x89E3;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6253;&#x5305;&#x89E3;&#x5305;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">tar</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li><code>tar</code>&#x662F;Linux&#x6700;&#x5E38;&#x7528;&#x7684;&#x5907;&#x4EFD;&#x5DE5;&#x5177;&#x3002;&#x5176;&#x529F;&#x80FD;&#x662F;&#x628A;&#x4E00;&#x7CFB;&#x5217;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x5F52;&#x6863;&#x5230;&#x4E00;&#x4E2A;tar&#x5305;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;tar&#x5305;&#x89E3;&#x6863;</li>
+<li><code>tar</code>&#x5F52;&#x6863;&#x64CD;&#x4F5C;&#x53EA;&#x662F;&#x6253;&#x5305;&#x5E76;&#x4E0D;&#x4F1A;&#x538B;&#x7F29;&#x6587;&#x4EF6;</li>
+<li><code>[file]</code>&#x5982;&#x6709;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;,&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x5272;&#x4F9D;&#x6B21;&#x6392;&#x5217;&#x5373;&#x53EF;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">options</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>-c</code></td>
+<td style="text-align:left">&#x751F;&#x6210;&#x6863;&#x6848;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-x</code></td>
+<td style="text-align:left">&#x89E3;&#x5F00;&#x6863;&#x6848;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-v</code></td>
+<td style="text-align:left">&#x5217;&#x51FA;&#x5F52;&#x6863;&#x89E3;&#x6863;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-f</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x6863;&#x6848;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x3002;<code>-f</code>&#x540E;&#x9762;&#x662F;tar&#x5305;&#x540D;&#x79F0;&#xFF0C;&#x6240;&#x4EE5;&#x5728;options&#x4E2D;&#x653E;&#x5728;&#x6700;&#x540E;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-t</code></td>
+<td style="text-align:left">&#x5217;&#x51FA;&#x6863;&#x6848;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-z</code></td>
+<td style="text-align:left">&#x4F7F;&#x7528;<code>gzip</code>&#x538B;&#x7F29;&#x6216;&#x89E3;&#x538B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-j</code></td>
+<td style="text-align:left">&#x4F7F;&#x7528;<code>bzip2</code>&#x538B;&#x7F29;&#x6216;&#x89E3;&#x538B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>-C</code></td>
+<td style="text-align:left">&#x89E3;&#x6863;&#x6216;&#x89E3;&#x538B;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x3002;<strong>&#x76EE;&#x5F55;&#x5FC5;&#x987B;&#x5B58;&#x5728;</strong></td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5C06;English.txt,Chinese.txt,Europe(&#x76EE;&#x5F55;)&#x5F52;&#x6863;&#x4E3A;languages.tar</span>
+$ <span class="token function">tar</span> -cvf languages.tar English.txt Chinese.txt Europe
+
+<span class="token comment"># &#x5C06;languages.tar&#x89E3;&#x6863;&#x5230;&#x5F53;&#x524D;&#x76EE;&#x5F55;</span>
+$ <span class="token function">tar</span> -xvf languages.tar
+</code></pre>
+<h2 id="2-&#x538B;&#x7F29;&#x89E3;&#x538B;"><a name="2-&#x538B;&#x7F29;&#x89E3;&#x538B;" class="plugin-anchor" href="#2-&#x538B;&#x7F29;&#x89E3;&#x538B;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x538B;&#x7F29;&#x89E3;&#x538B;</h2>
+<h3 id="1-gzip"><a name="1-gzip" class="plugin-anchor" href="#1-gzip"><i class="fa fa-link" aria-hidden="true"></i></a>1) gzip</h3>
+<p><code>gzip</code>&#x662F;Linux&#x4E0B;&#x4E00;&#x79CD;&#x6D41;&#x884C;&#x7684;&#x538B;&#x7F29;&#x65B9;&#x5F0F;&#x3002;</p>
+<ul>
+<li>&#x7528;<code>gzip</code>&#x538B;&#x7F29;<code>tar</code>&#x5305;&#x6587;&#x4EF6;&#x540E;&#x7684;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x662F;<code>.tar.gz</code>&#xFF0C;&#x8FD9;&#x662F;Linux&#x4E2D;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x538B;&#x7F29;&#x683C;&#x5F0F;</li>
+<li><code>tar</code>&#x547D;&#x4EE4;&#x4F7F;&#x7528;<code>-z</code>&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>gzip</code>&#x5BF9;tar&#x5305;&#x8FDB;&#x884C;&#x538B;&#x7F29;&#xFF0C;&#x65B9;&#x4FBF;&#x5B9E;&#x73B0;&#x6253;&#x5305;&#x538B;&#x7F29;</li>
+<li>&#x4E5F;&#x53EF;&#x5355;&#x72EC;&#x4F7F;&#x7528;<code>gzip</code>&#x538B;&#x7F29;tar&#x5305;&#x6216;&#x89E3;&#x538B;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#xFF0C;&#x5355;&#x4F7F;&#x7528;&#x8F83;&#x5C11;&#x3002;&#x4E00;&#x822C;&#x8054;&#x5408;<code>tar</code>&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x8F83;&#x591A;</li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5C06;English.txt,Chinese.txt,Europe(&#x76EE;&#x5F55;)&#x538B;&#x7F29;&#x4E3A;languages.tar.gz</span>
+$ <span class="token function">tar</span> -zcvf languages.tar.gz English.txt Chinese.txt Europe
+
+<span class="token comment"># &#x5C06;languages.tar.gz&#x89E3;&#x538B;&#x5230;&#x7528;&#x6237;&#x684C;&#x9762;</span>
+$ <span class="token function">tar</span> -zxvf languages.tar.gz -C ~/Desktop
+</code></pre>
+<h3 id="2-bzip2"><a name="2-bzip2" class="plugin-anchor" href="#2-bzip2"><i class="fa fa-link" aria-hidden="true"></i></a>2) bzip2</h3>
+<p><code>bzip2</code>&#x4E0E;<code>gzip</code>&#x7C7B;&#x4F3C;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x6D41;&#x884C;&#x538B;&#x7F29;&#x65B9;&#x5F0F;&#x3002;</p>
+<ul>
+<li>&#x7528;<code>bzip2</code>&#x538B;&#x7F29;<code>tar</code>&#x5305;&#x6587;&#x4EF6;&#x540E;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x662F;<code>.tar.bz2</code></li>
+<li><code>tar</code>&#x547D;&#x4EE4;&#x4F7F;&#x7528;<code>-j</code>&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>bzip2</code>&#x5BF9;tar&#x5305;&#x8FDB;&#x884C;&#x538B;&#x7F29;&#x3002;</li>
+</ul>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5C06;English.txt,Chinese.txt,Europe(&#x76EE;&#x5F55;)&#x538B;&#x7F29;&#x4E3A;languages.tar.bz2</span>
+$ <span class="token function">tar</span> -jcvf languages.tar.bz2 English.txt Chinese.txt Europe
+
+<span class="token comment"># &#x5C06;languages.tar.bz2&#x89E3;&#x538B;&#x5230;&#x7528;&#x6237;&#x684C;&#x9762;</span>
+$ <span class="token function">tar</span> -jxvf languages.tar.bz2 -C ~/Desktop
+</code></pre>
+<h3 id="3-zipunzip"><a name="3-zipunzip" class="plugin-anchor" href="#3-zipunzip"><i class="fa fa-link" aria-hidden="true"></i></a>3) zip/unzip</h3>
+<p>zip&#x538B;&#x7F29;&#x683C;&#x5F0F;&#x4E0D;&#x540C;&#x4E8E;gzip&#x548C;bzip2&#x8054;&#x5408;<code>tar</code>&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#xFF0C;zip&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x538B;&#x7F29;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x538B;&#x7F29;&#x5305;&#x4E2D;&#x3002;<code>zip</code>&#x683C;&#x5F0F;&#x7684;&#x538B;&#x7F29;&#x5305;&#x5E38;&#x7528;&#x4E8E;&#x5404;&#x5927;&#x5E73;&#x53F0;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x547D;&#x4EE4;&#x683C;&#x5F0F;</span>
+$ <span class="token function">zip</span> <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> <span class="token function">zip</span> path
+$ unzip <span class="token punctuation">[</span>-options<span class="token punctuation">]</span> path <span class="token function">zip</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;zip&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x6269;&#x5C55;&#x540D;&#x4E3A;zip&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5C06;&#x7528;&#x6237;Download&#x76EE;&#x5F55;&#x9012;&#x5F52;&#x538B;&#x7F29;&#x5230;test.zip&#x4E2D;</span>
+$ <span class="token function">zip</span> -r <span class="token function">test</span> ~/Download
+
+<span class="token comment"># &#x5C06;test.zip&#x89E3;&#x538B;&#x5230;temp&#x76EE;&#x5F55;&#x4E2D;</span>
+$ unzip -d temp <span class="token function">test</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-07 19:34:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="link.html" class="navigation navigation-prev " aria-label="Previous page: 2.6 文件链接">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vim.html" class="navigation navigation-next " aria-label="Next page: 2.8 vi/vim">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.7 打包压缩","level":"2.2.7","depth":2,"next":{"title":"2.8 vi/vim","level":"2.2.8","depth":2,"path":"part1/filemg/vim.md","ref":"part1/filemg/vim.md","articles":[]},"previous":{"title":"2.6 文件链接","level":"2.2.6","depth":2,"path":"part1/filemg/link.md","ref":"part1/filemg/link.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part1/filemg/compress.md","mtime":"2018-12-07T11:34:51.857Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T11:46:16.381Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

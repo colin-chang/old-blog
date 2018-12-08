@@ -1,0 +1,1401 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.1 执行方式 · Python-软件开发</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="standard.html" />
+    
+    
+    <link rel="prev" href="intro.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Python基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    1. Python基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="ide.html">
+            
+                <a href="ide.html">
+            
+                    
+                    1.1 执行方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    1.2 代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variabletype.html">
+            
+                <a href="variabletype.html">
+            
+                    
+                    1.3 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="inout.html">
+            
+                <a href="inout.html">
+            
+                    
+                    1.4 输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="operator.html">
+            
+                <a href="operator.html">
+            
+                    
+                    1.5 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="processctrl.html">
+            
+                <a href="processctrl.html">
+            
+                    
+                    1.6 流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    1.7 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    2. 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - Python高级编程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    1.网络编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    2.并发编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    3.数据库编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    4.Python语法强化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    5.项目1：mini-web服务器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                    6.项目2：mini-web框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ - 前端开发</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    1.html
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    2.css
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <span>
+            
+                    
+                    3.ps应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+                <span>
+            
+                    
+                    4.JavaScript编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" >
+            
+                <span>
+            
+                    
+                    5.DOM操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" >
+            
+                <span>
+            
+                    
+                    6.JQuery
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" >
+            
+                <span>
+            
+                    
+                    7.Vue.js框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV -  Web开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    1.Flask web框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    2.模板与表单
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    3.数据库使用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <span>
+            
+                    
+                    4.单元测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" >
+            
+                <span>
+            
+                    
+                    5.第三方扩展和部署
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" >
+            
+                <span>
+            
+                    
+                    6.Redis缓存
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" >
+            
+                <span>
+            
+                    
+                    7.GIT版本控制
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" >
+            
+                <span>
+            
+                    
+                    8.前后端不分离开发
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" >
+            
+                <span>
+            
+                    
+                    9.Flask+Mysql实现
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" >
+            
+                <span>
+            
+                    
+                    10.容联云、七牛云
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" >
+            
+                <span>
+            
+                    
+                    11.图片验证码
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" >
+            
+                <span>
+            
+                    
+                    12.项目：新经资讯网
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" >
+            
+                <span>
+            
+                    
+                    13.前后端分离开发
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part V -  数据处理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    1.爬虫开发
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <span>
+            
+                    
+                    2.爬虫知识体系与相关工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" >
+            
+                <span>
+            
+                    
+                    3.基本使用增删改查操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" >
+            
+                <span>
+            
+                    
+                    4.高级查询和分组聚合操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+                <span>
+            
+                    
+                    5.备份和恢复处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <span>
+            
+                    
+                    6.Mongodb应用开发
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+                <span>
+            
+                    
+                    7.Mongodb和Python交互
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" >
+            
+                <span>
+            
+                    
+                    8.scrapy框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" >
+            
+                <span>
+            
+                    
+                    9.定制化的爬虫采集系统
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" >
+            
+                <span>
+            
+                    
+                    10.数据的抓取和存储
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" >
+            
+                <span>
+            
+                    
+                    11.scrapy-redis分布式组件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" >
+            
+                <span>
+            
+                    
+                    12.项目：全国空气质量采集爬虫
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" >
+            
+                <span>
+            
+                    
+                    13.项目：电商广告推荐系统
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅵ -  人工智能</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" >
+            
+                <span>
+            
+                    
+                    1.数据挖掘基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" >
+            
+                <span>
+            
+                    
+                    2.科学计算numpy、pandas
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" >
+            
+                <span>
+            
+                    
+                    3.数据可视化matpalotlib
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" >
+            
+                <span>
+            
+                    
+                    4.金融数据的分析和处理
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" >
+            
+                <span>
+            
+                    
+                    5.特征工程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" >
+            
+                <span>
+            
+                    
+                    6.监督学习分类算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" >
+            
+                <span>
+            
+                    
+                    7.Scikit-learn使用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" >
+            
+                <span>
+            
+                    
+                    8.模型选择与调优
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" >
+            
+                <span>
+            
+                    
+                    9.历史数据、实时数据
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" >
+            
+                <span>
+            
+                    
+                    10.多因子模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" >
+            
+                <span>
+            
+                    
+                    11.量化交易策略
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" >
+            
+                <span>
+            
+                    
+                    12.回测框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" >
+            
+                <span>
+            
+                    
+                    13.项目：自动量化交易平台
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅶ -  高级强化</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    1.自动化运维
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <span>
+            
+                    
+                    2.shell编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" >
+            
+                <span>
+            
+                    
+                    3.项目生命周期
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" >
+            
+                <span>
+            
+                    
+                    4.自动化代码发布
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" >
+            
+                <span>
+            
+                    
+                    5.手工代码发布
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" >
+            
+                <span>
+            
+                    
+                    6.大型脚本编写流程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" >
+            
+                <span>
+            
+                    
+                    7.django项目生产环境部署
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" >
+            
+                <span>
+            
+                    
+                    8.数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" >
+            
+                <span>
+            
+                    
+                    9.时间和空间复杂度
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" >
+            
+                <span>
+            
+                    
+                    10.链表
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" >
+            
+                <span>
+            
+                    
+                    11.量化交易策略
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" >
+            
+                <span>
+            
+                    
+                    12.python内建数据结构类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.1 执行方式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python&#x6267;&#x884C;&#x65B9;&#x5F0F;"><a name="python&#x6267;&#x884C;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#python&#x6267;&#x884C;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>Python&#x6267;&#x884C;&#x65B9;&#x5F0F;</h1>
+<ul>
+<li><a href="#1-&#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;">1. &#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;</a></li>
+<li><a href="#2-&#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;python">2. &#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;python</a></li>
+<li><a href="#3-python&#x5F00;&#x53D1;ide">3. Python&#x5F00;&#x53D1;IDE</a></li>
+</ul>
+<h2 id="1-&#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;"><a name="1-&#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;" class="plugin-anchor" href="#1-&#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x89E3;&#x91CA;&#x5668;&#x6267;&#x884C;</h2>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># python 2.x&#x89E3;&#x91CA;&#x5668;</span>
+$ python xxx.py
+&#xB7;
+<span class="token comment"># python 2.x&#x89E3;&#x91CA;&#x5668;</span>
+$ python3 xxx.py
+</code></pre>
+<p>python&#x89E3;&#x91CA;&#x5668;&#x6709;&#x591A;&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x5982;&#xFF1A;</p>
+<ul>
+<li><code>CPython</code> &#x5B98;&#x65B9;C&#x8BED;&#x8A00;&#x5B9E;&#x73B0;</li>
+<li><code>Jython</code> Java&#x5E73;&#x53F0;</li>
+<li><code>IronPython</code> .Net&#x548C;Mono&#x5E73;&#x53F0;</li>
+<li><code>Pypy</code> Python&#x5B9E;&#x73B0;&#xFF0C;&#x652F;&#x6301;JIT&#x5373;&#x65F6;&#x7F16;&#x8F91;</li>
+</ul>
+<h4 id="mac-os-&#x5B89;&#x88C5;-python3"><a name="mac-os-&#x5B89;&#x88C5;-python3" class="plugin-anchor" href="#mac-os-&#x5B89;&#x88C5;-python3"><i class="fa fa-link" aria-hidden="true"></i></a>mac OS &#x5B89;&#x88C5; Python3</h4>
+<p>mac OS &#x4E2D;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x4E86;Python 2.7,&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;Python 3.x&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x3002;Mojave&#x4E2D;&#x4F7F;&#x7528;Homebrew&#x5B89;&#x88C5;Python3&#x65F6;&#x4F1A;&#x5B58;&#x5728;&#x94FE;&#x63A5;&#x5931;&#x8D25;&#x7684;&#x95EE;&#x9898;&#x3002;&#x7CFB;&#x7EDF;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x6027;&#x8003;&#x8651;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;sudo&#x6216;root&#x7528;&#x6237;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#x3002;&#x60C5;&#x51B5;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code class="lang-sh">$ brew <span class="token function">install</span> python3
+Warning: python3 3.7.0 is already installed, it&apos;s just not linked.
+You can use <span class="token variable"><span class="token variable">`</span>brew <span class="token function">link</span> python3<span class="token variable">`</span></span> to <span class="token function">link</span> this version.
+
+$ brew <span class="token function">link</span> python3
+Linking /usr/local/Cellar/python3/3.6.3<span class="token punctuation">..</span>. Error: Permission denied @ dir_s_mkdir - /usr/local/Frameworks
+</code></pre>
+<p>&#x67E5;&#x770B;&#x53D1;&#x73B0;&#x8DEF;&#x5F84;<code>/usr/local/Frameworks</code>&#x5E76;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x6B64;&#x76EE;&#x5F55;&#x5E76;&#x7ED9;&#x4E88;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x3002;</p>
+<pre class="language-"><code class="lang-sh">$ <span class="token function">sudo</span> <span class="token function">mkdir</span> /usr/local/Frameworks
+$ <span class="token function">sudo</span> <span class="token function">chown</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span>:admin /usr/local/Frameworks
+</code></pre>
+<p>&#x5B8C;&#x6210;&#x540E;&#x91CD;&#x65B0;&#x5C1D;&#x8BD5;&#x94FE;&#x63A5;&#x6210;&#x529F;</p>
+<pre class="language-"><code class="lang-sh">$ brew <span class="token function">link</span> python3
+Linking /usr/local/Cellar/python3/3.6.3<span class="token punctuation">..</span>. 1 symlinks created
+</code></pre>
+<h2 id="2-&#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;python"><a name="2-&#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;python" class="plugin-anchor" href="#2-&#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;python"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x4EA4;&#x4E92;&#x5F0F;&#x6267;&#x884C;Python</h2>
+<h4 id="1-python-shell"><a name="1-python-shell" class="plugin-anchor" href="#1-python-shell"><i class="fa fa-link" aria-hidden="true"></i></a>1) Python Shell</h4>
+<p>&#x76F4;&#x63A5;&#x5728;Python&#x7684;shell&#x4E2D;&#x8F93;&#x5165;Python&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x6B64;&#x4E3A;&#x4EA4;&#x4E92;&#x5F0F;&#x8FD0;&#x884C;Python&#x3002;</p>
+<p>&#x4EA4;&#x4E92;&#x5F0F;&#x8FD0;&#x884C;&#x65B9;&#x5F0F;&#x9002;&#x5408;&#x5B66;&#x4E60;&#x6216;&#x9A8C;&#x8BC1;Python&#x8BED;&#x6CD5;&#x6216;&#x5C40;&#x90E8;&#x4EE3;&#x7801;&#xFF0C;&#x4F46;&#x662F;&#x4EE3;&#x7801;&#x4E0D;&#x80FD;&#x4FDD;&#x5B58;&#xFF0C;&#x4E0D;&#x9002;&#x5408;&#x8FD0;&#x884C;&#x8F83;&#x5927;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F7F;&#x7528; <code>exit()</code> &#x51FD;&#x6570;&#x6216; <code>ctrl + D</code> &#x9000;&#x51FA;Python Shell&#x3002;</p>
+<h4 id="2-ipython"><a name="2-ipython" class="plugin-anchor" href="#2-ipython"><i class="fa fa-link" aria-hidden="true"></i></a>2) IPython</h4>
+<p>IPython&#x662F;&#x4E00;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;python&#x7684;&#x4EA4;&#x4E92;&#x5F0F;shell&#xFF0C;&#x529F;&#x80FD;&#x8FDC;&#x80DC;&#x4E8E;python shell&#x3002;</p>
+<ul>
+<li>&#x652F;&#x6301;&#x4EE3;&#x7801;&#x667A;&#x80FD;&#x63D0;&#x793A;&#xFF0C;&#x81EA;&#x52A8;&#x8865;&#x5168;</li>
+<li>&#x652F;&#x6301;&#x81EA;&#x52A8;&#x7F29;&#x7D27;</li>
+<li>&#x5185;&#x7F6E;&#x5E38;&#x7528;&#x529F;&#x80FD;&#x51FD;&#x6570;</li>
+<li><strong>&#x652F;&#x6301;bash shell</strong>,&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;Linux&#x547D;&#x4EE4;</li>
+</ul>
+<p>IPython&#x5B58;&#x5728;IPython 2.x&#x548C;3.x&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x3002;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>exit</code> &#x6307;&#x4EE4;&#x9000;&#x51FA;</p>
+<h4 id="mac-os-&#x5B89;&#x88C5;-ipython3"><a name="mac-os-&#x5B89;&#x88C5;-ipython3" class="plugin-anchor" href="#mac-os-&#x5B89;&#x88C5;-ipython3"><i class="fa fa-link" aria-hidden="true"></i></a>mac OS &#x5B89;&#x88C5; IPython3</h4>
+<p>&#x5728;mac&#x4E2D;&#x5B89;&#x88C5;IPython&#x6709;&#x5F88;&#x591A;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;Homebrew,pip&#x7B49;&#x3002;</p>
+<pre class="language-"><code class="lang-sh">$ brew <span class="token function">install</span> ipython
+</code></pre>
+<p>&#x8FD0;&#x884C;ipython&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;</p>
+<pre class="language-"><code>Traceback (most recent call last):
+  File &quot;/usr/local/Cellar/ipython/7.0.1/libexec/bin/ipython&quot;, line 6, in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>module</span><span class="token punctuation">&gt;</span></span>
+    from pkg_resources import load_entry_point
+ModuleNotFoundError: No module named &apos;pkg_resources&apos;
+</code></pre><p>&#x5173;&#x4E8E;&#x6B64;&#x9519;&#x8BEF;&#xFF0C;&#x7F51;&#x4E0A;&#x8BF4;&#x6CD5;&#x4F17;&#x8BF4;&#x7EB7;&#x7EAD;&#x3002;&#x5927;&#x591A;&#x662F;&#x8BF4;&#x56E0;&#x4E3A;mac&#x7684;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x7B49;&#x95EE;&#x9898;&#x5F15;&#x53D1;&#x6B64;&#x95EE;&#x9898;&#xFF0C;&#x800C;mac&#x7CFB;&#x7EDF;&#x4E2D;&#x90E8;&#x5206;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684;python2.7&#x6765;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x591A;python2.7&#x7684;&#x914D;&#x7F6E;&#x5373;&#x4F7F;&#x4F7F;&#x7528;root&#x7528;&#x6237;&#x4E5F;&#x4E0D;&#x5141;&#x8BB8;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x81EA;&#x5DF1;&#x5B89;&#x88C5;&#x7684;Python3.x&#x73AF;&#x5883;&#x3002;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4FEE;&#x590D;&#x6B64;&#x95EE;&#x9898;&#x3002;</p>
+<ul>
+<li><p>&#x786E;&#x4FDD;<code>pip</code>&#x5DF2;&#x6B63;&#x786E;&#x5B89;&#x88C5;</p>
+<pre class="language-"><code class="lang-sh">$ pip --version
+</code></pre>
+</li>
+<li><p>&#x82E5;&#x672A;&#x5B89;&#x88C5;&#x5219;&#x53EF;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B89;&#x88C5;</p>
+<pre class="language-"><code class="lang-sh">$ <span class="token function">sudo</span> python3 -m ensurepip --default-pip
+</code></pre>
+</li>
+<li><p>&#x786E;&#x4FDD;pip,setuptools,wheel&#x6700;&#x65B0;</p>
+<pre class="language-"><code class="lang-sh">$ <span class="token function">sudo</span> python3 -m pip <span class="token function">install</span> --upgrade pip setuptools wheel
+</code></pre>
+<p>&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x91CD;&#x8BD5;&#x6267;&#x884C;<code>ipython</code>&#x6210;&#x529F;</p>
+</li>
+</ul>
+<h2 id="3-python&#x5F00;&#x53D1;ide"><a name="3-python&#x5F00;&#x53D1;ide" class="plugin-anchor" href="#3-python&#x5F00;&#x53D1;ide"><i class="fa fa-link" aria-hidden="true"></i></a>3. Python&#x5F00;&#x53D1;IDE</h2>
+<p>&#x63A8;&#x8350;&#x4F7F;&#x7528;PyCharm&#x3002;Pycharm&#x662F;&#x6D41;&#x884C;&#x7684;Python&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;,&#x652F;&#x6301;Windows/mac OS/Linux&#x3002; </p>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-08 19:34:01
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page: 1. Python基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="standard.html" class="navigation navigation-next " aria-label="Next page: 1.2 代码规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.1 执行方式","level":"2.1.1","depth":2,"next":{"title":"1.2 代码规范","level":"2.1.2","depth":2,"path":"part1/standard.md","ref":"part1/standard.md","articles":[]},"previous":{"title":"1. Python基础","level":"2.1","depth":1,"path":"part1/intro.md","ref":"part1/intro.md","articles":[{"title":"1.1 执行方式","level":"2.1.1","depth":2,"path":"part1/ide.md","ref":"part1/ide.md","articles":[]},{"title":"1.2 代码规范","level":"2.1.2","depth":2,"path":"part1/standard.md","ref":"part1/standard.md","articles":[]},{"title":"1.3 数据类型","level":"2.1.3","depth":2,"path":"part1/variabletype.md","ref":"part1/variabletype.md","articles":[]},{"title":"1.4 输入输出","level":"2.1.4","depth":2,"path":"part1/inout.md","ref":"part1/inout.md","articles":[]},{"title":"1.5 运算符","level":"2.1.5","depth":2,"path":"part1/operator.md","ref":"part1/operator.md","articles":[]},{"title":"1.6 流程控制语句","level":"2.1.6","depth":2,"path":"part1/processctrl.md","ref":"part1/processctrl.md","articles":[]},{"title":"1.7 函数","level":"2.1.7","depth":2,"path":"part1/function.md","ref":"part1/function.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/python"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/python/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python-软件开发","gitbook":"*","description":"Python—人工智能主流语言"},"file":{"path":"part1/ide.md","mtime":"2018-12-08T11:34:01.582Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T12:34:27.216Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

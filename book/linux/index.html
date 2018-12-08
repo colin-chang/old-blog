@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>前言 · Linux-运维之美</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part1/directive.html" />
+    
+    
+
+    
+        <link rel="shortcut icon" href='assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="part1/directive.html">
+            
+                <a href="part1/directive.html">
+            
+                    
+                    1. Linux命令简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="part1/filemg/index.md">
+            
+                <span>
+            
+                    
+                    2. 文件目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="part1/filemg/directory.html">
+            
+                <a href="part1/filemg/directory.html">
+            
+                    
+                    2.1 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="part1/filemg/view.html">
+            
+                <a href="part1/filemg/view.html">
+            
+                    
+                    2.2 查看文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="part1/filemg/mkrm.html">
+            
+                <a href="part1/filemg/mkrm.html">
+            
+                    
+                    2.3 新建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="part1/filemg/cpmv.html">
+            
+                <a href="part1/filemg/cpmv.html">
+            
+                    
+                    2.4 拷贝/移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="part1/filemg/find.html">
+            
+                <a href="part1/filemg/find.html">
+            
+                    
+                    2.5 搜索/重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="part1/filemg/link.html">
+            
+                <a href="part1/filemg/link.html">
+            
+                    
+                    2.6 文件链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="part1/filemg/compress.html">
+            
+                <a href="part1/filemg/compress.html">
+            
+                    
+                    2.7 打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="part1/filemg/vim.html">
+            
+                <a href="part1/filemg/vim.html">
+            
+                    
+                    2.8 vi/vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="part1/permission/index.md">
+            
+                <span>
+            
+                    
+                    3. 权限管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="part1/permission/usermg.html">
+            
+                <a href="part1/permission/usermg.html">
+            
+                    
+                    3.1 用户(组)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="part1/permission/permission.html">
+            
+                <a href="part1/permission/permission.html">
+            
+                    
+                    3.2 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="part1/maintenance.html">
+            
+                <a href="part1/maintenance.html">
+            
+                    
+                    4. 系统维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="part1/remote.html">
+            
+                <a href="part1/remote.html">
+            
+                    
+                    5. 远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - 常用环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="part2/ftp.html">
+            
+                <a href="part2/ftp.html">
+            
+                    
+                    1. FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="part2/mysql.html">
+            
+                <a href="part2/mysql.html">
+            
+                    
+                    2. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="part2/nginx.html">
+            
+                <a href="part2/nginx.html">
+            
+                    
+                    3. Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="part2/gui.html">
+            
+                <a href="part2/gui.html">
+            
+                    
+                    4. 界面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ Linux编程</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part IV - 科学上网</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="part4/crossgfw.html">
+            
+                <a href="part4/crossgfw.html">
+            
+                    
+                    1. 科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="part4/wg.html">
+            
+                <a href="part4/wg.html">
+            
+                    
+                    2. WireGuard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="part4/v2ray.html">
+            
+                <a href="part4/v2ray.html">
+            
+                    
+                    3. V2Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="part4/brook.html">
+            
+                <a href="part4/brook.html">
+            
+                    
+                    4. Brook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >前言</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>&quot;&#x5F00;&#x542F;Linux&#x4E4B;&#x65C5;&quot;</p>
+</blockquote>
+<h2 id="linux&#x2014;&#x6D41;&#x884C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;"><a name="linux&#x2014;&#x6D41;&#x884C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;" class="plugin-anchor" href="#linux&#x2014;&#x6D41;&#x884C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x2014;&#x6D41;&#x884C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</h2>
+<p>&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x662F;&#x5FAE;&#x8F6F;&#x7684; Windows &#x6216;&#x662F;&#x82F9;&#x679C;&#x7684; OS X&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5BB9;&#x6613;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x8005;&#x5F88;&#x591A;&#x3002; &#x5176;&#x5B9E;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x5F00;&#x6E90;&#x514D;&#x8D39;&#x7684;&#xFF0C;&#x8C01;&#x90FD;&#x53EF;&#x4EE5;&#x514D;&#x8D39;&#x4F7F;&#x7528;&#x548C;&#x5B89;&#x88C5;&#xFF0C;&#x5B83;&#x5C31;&#x662F; linux&#x3002; </p>
+<p>Linux&#x662F;&#x4E00;&#x5957;&#x514D;&#x8D39;&#x4F7F;&#x7528;&#x548C;&#x81EA;&#x7531;&#x4F20;&#x64AD;&#x7684;&#x7C7B;Unix&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;POSIX&#x548C;UNIX&#x7684;&#x591A;&#x7528;&#x6237;&#x3001;&#x591A;&#x4EFB;&#x52A1;&#x3001;&#x652F;&#x6301;&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;CPU&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;Linux&#x80FD;&#x8FD0;&#x884C;&#x4E3B;&#x8981;&#x7684;UNIX&#x5DE5;&#x5177;&#x8F6F;&#x4EF6;&#x3001;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x3002;&#x5B83;&#x652F;&#x6301;32&#x4F4D;&#x548C;64&#x4F4D;&#x786C;&#x4EF6;&#x3002;Linux&#x7EE7;&#x627F;&#x4E86;Unix&#x4EE5;&#x7F51;&#x7EDC;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x7A33;&#x5B9A;&#x7684;&#x591A;&#x7528;&#x6237;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p>&#x53EF;&#x662F;&#x56FD;&#x5185;&#x5F88;&#x5C11;&#x6709;&#x7528;&#x6237;&#x4F7F;&#x7528; linux&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x5B66;&#x4E60;&#xFF0C;&#x4E0D;&#x7136;&#x5F88;&#x96BE;&#x64CD;&#x4F5C;&#x3002; &#x672C;&#x6559;&#x7A0B;&#xFF0C;&#x575A;&#x6301;&#x201C;&#x7406;&#x8BBA;&#x591F;&#x7528;&#x3001;&#x4FA7;&#x91CD;&#x5B9E;&#x7528;&#x201D;&#x7684;&#x539F;&#x5219;&#xFF0C;&#x5BF9; Linux &#x5E38;&#x7528;&#x529F;&#x80FD;&#x505A;&#x4E86;&#x8F83;&#x4E3A;&#x7B80;&#x7565;&#x9610;&#x8FF0;&#xFF0C;&#x6765;&#x5E2E;&#x52A9;&#x5927;&#x5BB6;&#x5FEB;&#x901F;&#x5B66;&#x4E60;&#x548C;&#x5165;&#x95E8;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p><img src="img/linux.jpg" alt="Linux&#x5165;&#x95E8;" title="Linux&#x5165;&#x95E8;&#x6559;&#x7A0B;"></p>
+<h2 id="linux&#x5185;&#x6838;&#x4E0E;&#x53D1;&#x884C;&#x7248;"><a name="linux&#x5185;&#x6838;&#x4E0E;&#x53D1;&#x884C;&#x7248;" class="plugin-anchor" href="#linux&#x5185;&#x6838;&#x4E0E;&#x53D1;&#x884C;&#x7248;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x5185;&#x6838;&#x4E0E;&#x53D1;&#x884C;&#x7248;</h2>
+<h4 id="&#x5185;&#x6838;&#x7248;&#x672C;"><a name="&#x5185;&#x6838;&#x7248;&#x672C;" class="plugin-anchor" href="#&#x5185;&#x6838;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x6838;&#x7248;&#x672C;</h4>
+<ul>
+<li><strong>&#x5185;&#x6838;(kernel)</strong>&#x662F;Linux&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#xFF0C;&#x662F;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x548C;&#x7BA1;&#x7406;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x7684;&#x6838;&#x5FC3;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5728;&#x88F8;&#x8BBE;&#x5907;&#x4E0E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x62BD;&#x8C61;&#x5C42;</li>
+<li>Linux&#x5185;&#x6838;&#x7248;&#x672C;&#x5206;&#x4E3A; <strong>&#x7A33;&#x5B9A;&#x7248;</strong> &#x548C; <strong>&#x5F00;&#x53D1;&#x7248;</strong><ul>
+<li><strong>&#x7A33;&#x5B9A;&#x7248;&#xFF1A;</strong> &#x5177;&#x6709;&#x5DE5;&#x4E1A;&#x7EA7;&#x5F3A;&#x5EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x5E7F;&#x6CDB;&#x7684;&#x5E94;&#x7528;&#x548C;&#x90E8;&#x7F72;&#x3002;&#x65B0;&#x7684;&#x7A33;&#x5B9A;&#x7248;&#x76F8;&#x5BF9;&#x4E8E;&#x65E7;&#x7248;&#x53EA;&#x662F;&#x4FEE;&#x6B63;bug&#x548C;&#x52A0;&#x5165;&#x65B0;&#x7684;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;</li>
+<li><strong>&#x5F00;&#x53D1;&#x7248;&#xFF1A;</strong> &#x7531;&#x4E8E;&#x8981;&#x8BD5;&#x9A8C;&#x5404;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x6240;&#x4EE5;&#x66F4;&#x65B0;&#x548C;&#x53D8;&#x5316;&#x5F88;&#x5FEB;</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x5185;&#x6838;&#x6E90;&#x7801;&#x7F51;&#x5740;&#xFF1A;<a href="https://www.kernel.org" target="_blank">https://www.kernel.org</a></p>
+</blockquote>
+<h4 id="&#x53D1;&#x884C;&#x7248;&#x672C;"><a name="&#x53D1;&#x884C;&#x7248;&#x672C;" class="plugin-anchor" href="#&#x53D1;&#x884C;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D1;&#x884C;&#x7248;&#x672C;</h4>
+<ul>
+<li><p><strong>Linux&#x53D1;&#x884C;&#x7248;(&#x4E5F;&#x79F0;GNU/Linux&#x53D1;&#x884C;&#x7248;)</strong> &#x662F;&#x57FA;&#x4E8E;Linux&#x5185;&#x6838;&#x7248;&#x672C;&#x4E4B;&#x4E0A;&#xFF0C;Linux&#x53D1;&#x884C;&#x7248;&#x5219;&#x662F;&#x57FA;&#x4E8E;&#x5185;&#x6838;&#x7248;&#x672C;&#x4E4B;&#x4E0A;&#x53C8;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x8F6F;&#x4EF6;&#x5171;&#x540C;&#x6784;&#x6210;&#x7684;&#x4E00;&#x5957;&#x5E9E;&#x5927;&#x590D;&#x6742;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;&#x867D;&#x7136;&#x5185;&#x6838;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x6DFB;&#x52A0;&#x90E8;&#x5206;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x8FD9;&#x5C31;&#x6784;&#x6210;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x53D1;&#x884C;&#x7248;&#x672C;&#x3002;</p>
+</li>
+<li><p>&#x5E38;&#x89C1;&#x7684;&#x53D1;&#x884C;&#x7248;&#x6709; Ubuntu&#x3001;RedHat&#x3001;CentOS&#x3001;Debian&#x3001;Fedora&#x3001;SuSE&#x3001;OpenSUSE&#x3001;Arch Linux&#x3001;SolusOS &#x7B49;</p>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-11-02 13:28:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="part1/directive.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1. Linux命令简介">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.3","depth":1,"next":{"title":"1. Linux命令简介","level":"2.1","depth":1,"path":"part1/directive.md","ref":"part1/directive.md","articles":[]},"previous":{"title":"Colin's Blog","level":"1.2","depth":1,"url":"http://colin-chang.site","ref":"http://colin-chang.site","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"README.md","mtime":"2018-11-02T05:28:12.349Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T11:46:16.381Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

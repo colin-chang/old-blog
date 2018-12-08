@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. Nginx · Linux-运维之美</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gui.html" />
+    
+    
+    <link rel="prev" href="mysql.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://colin-chang.site/about/">
+            
+                    
+                    About Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://colin-chang.site">
+            
+                    
+                    Colin's Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I - Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part1/directive.html">
+            
+                <a href="../part1/directive.html">
+            
+                    
+                    1. Linux命令简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part1/filemg/index.md">
+            
+                <span>
+            
+                    
+                    2. 文件目录管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../part1/filemg/directory.html">
+            
+                <a href="../part1/filemg/directory.html">
+            
+                    
+                    2.1 目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../part1/filemg/view.html">
+            
+                <a href="../part1/filemg/view.html">
+            
+                    
+                    2.2 查看文件目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../part1/filemg/mkrm.html">
+            
+                <a href="../part1/filemg/mkrm.html">
+            
+                    
+                    2.3 新建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../part1/filemg/cpmv.html">
+            
+                <a href="../part1/filemg/cpmv.html">
+            
+                    
+                    2.4 拷贝/移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../part1/filemg/find.html">
+            
+                <a href="../part1/filemg/find.html">
+            
+                    
+                    2.5 搜索/重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../part1/filemg/link.html">
+            
+                <a href="../part1/filemg/link.html">
+            
+                    
+                    2.6 文件链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../part1/filemg/compress.html">
+            
+                <a href="../part1/filemg/compress.html">
+            
+                    
+                    2.7 打包压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../part1/filemg/vim.html">
+            
+                <a href="../part1/filemg/vim.html">
+            
+                    
+                    2.8 vi/vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part1/permission/index.md">
+            
+                <span>
+            
+                    
+                    3. 权限管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../part1/permission/usermg.html">
+            
+                <a href="../part1/permission/usermg.html">
+            
+                    
+                    3.1 用户(组)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../part1/permission/permission.html">
+            
+                <a href="../part1/permission/permission.html">
+            
+                    
+                    3.2 权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part1/maintenance.html">
+            
+                <a href="../part1/maintenance.html">
+            
+                    
+                    4. 系统维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part1/remote.html">
+            
+                <a href="../part1/remote.html">
+            
+                    
+                    5. 远程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅱ - 常用环境搭建</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="ftp.html">
+            
+                <a href="ftp.html">
+            
+                    
+                    1. FTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    2. MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    3. Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    4. 界面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅲ Linux编程</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Part IV - 科学上网</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part4/crossgfw.html">
+            
+                <a href="../part4/crossgfw.html">
+            
+                    
+                    1. 科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../part4/wg.html">
+            
+                <a href="../part4/wg.html">
+            
+                    
+                    2. WireGuard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../part4/v2ray.html">
+            
+                <a href="../part4/v2ray.html">
+            
+                    
+                    3. V2Ray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../part4/brook.html">
+            
+                <a href="../part4/brook.html">
+            
+                    
+                    4. Brook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. Nginx</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nginx&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;"><a name="nginx&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;" class="plugin-anchor" href="#nginx&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;</h1>
+<p>Nginx&#x662F;&#x5F53;&#x4E0B;&#x6D41;&#x884C;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x9AD8;&#x6027;&#x80FD;&#x7684;HTTP&#x548C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x7684;&#x4ECB;&#x7ECD;&#x4EE5;&#x4E0B;Ubuntu&#x548C;mac OS&#x4E2D;&#x7684;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#x65B9;&#x6CD5;</p>
+<h2 id="1-&#x5B89;&#x88C5;-nginx"><a name="1-&#x5B89;&#x88C5;-nginx" class="plugin-anchor" href="#1-&#x5B89;&#x88C5;-nginx"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5B89;&#x88C5; nginx</h2>
+<h3 id="1-ubuntu"><a name="1-ubuntu" class="plugin-anchor" href="#1-ubuntu"><i class="fa fa-link" aria-hidden="true"></i></a>1) Ubuntu</h3>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x66F4;&#x65B0;apt</span>
+$ <span class="token function">sudo</span> apt update
+
+<span class="token comment"># &#x5B89;&#x88C5;nginx</span>
+$ <span class="token function">sudo</span> apt <span class="token function">install</span> nginx
+</code></pre>
+<p>nginx&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <a href="http://localhost/&#xFF0C;" target="_blank">http://localhost/&#xFF0C;</a> &#x5982;&#x679C;&#x770B;&#x5230;&#x6B22;&#x8FCE;&#x9875;&#x9762;&#x8BF4;&#x660E;nginx&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h3 id="2-mac-os"><a name="2-mac-os" class="plugin-anchor" href="#2-mac-os"><i class="fa fa-link" aria-hidden="true"></i></a>2) mac OS</h3>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x66F4;&#x65B0;brew</span>
+$ brew update
+
+<span class="token comment"># &#x5B89;&#x88C5;nginx</span>
+$ brew <span class="token function">install</span> nginx
+</code></pre>
+<p>nginx&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <a href="http://localhost:8080/&#xFF0C;" target="_blank">http://localhost:8080/&#xFF0C;</a> &#x5982;&#x679C;&#x770B;&#x5230;&#x6B22;&#x8FCE;&#x9875;&#x9762;&#x8BF4;&#x660E;nginx&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h2 id="2-&#x7B80;&#x5355;&#x914D;&#x7F6E;"><a name="2-&#x7B80;&#x5355;&#x914D;&#x7F6E;" class="plugin-anchor" href="#2-&#x7B80;&#x5355;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x7B80;&#x5355;&#x914D;&#x7F6E;</h2>
+<p>nginx&#x4E3B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3A;<code>nginx.conf</code>&#x3002;&#x53CD;&#x4EE3;&#x529F;&#x80FD;&#x53EA;&#x9700;&#x7B80;&#x5355;&#x914D;&#x7F6E; <code>http</code>&#x8282;&#x70B9;&#x5373;&#x53EF;&#x3002;&#x7B80;&#x5355;&#x914D;&#x7F6E;&#x5B9E;&#x4F8B;&#x5982;&#x4E0B;:</p>
+<pre class="language-"><code class="lang-json">upstream proxygroup <span class="token punctuation">{</span>
+    server <span class="token number">35.236</span><span class="token number">.93</span><span class="token number">.136</span><span class="token operator">:</span><span class="token number">5000</span> weight=<span class="token number">1</span> max_fails=<span class="token number">2</span> fail_timeout=<span class="token number">30</span>s<span class="token punctuation">;</span>
+    server <span class="token number">35.236</span><span class="token number">.93</span><span class="token number">.138</span><span class="token operator">:</span><span class="token number">5001</span> weight=<span class="token number">1</span> max_fails=<span class="token number">2</span> fail_timeout=<span class="token number">30</span>s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+server <span class="token punctuation">{</span>
+    listen        <span class="token number">80</span><span class="token punctuation">;</span> 
+    server_name   localhost <span class="token number">35.236</span><span class="token number">.93</span><span class="token number">.135</span> bet518.win www.bet518.win<span class="token punctuation">;</span>
+    location / <span class="token punctuation">{</span>
+        proxy_pass         http<span class="token operator">:</span>//proxygroup<span class="token punctuation">;</span>
+        proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+        proxy_set_header   Upgrade $http_upgrade<span class="token punctuation">;</span>
+        proxy_set_header   Connection keep-alive<span class="token punctuation">;</span>
+        proxy_set_header   Host $host<span class="token punctuation">;</span>
+        proxy_cache_bypass $http_upgrade<span class="token punctuation">;</span>
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for<span class="token punctuation">;</span>
+        proxy_set_header   X-Forwarded-Proto $scheme<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x914D;&#x7F6E;&#x662F;&#x5C06;&#x5BF9;<code>localhost,35.236.93.139,bet518.win,www.bet518.win</code>&#x7B49;&#x5730;&#x5740;80&#x7AEF;&#x53E3;&#x7684;&#x8BBF;&#x95EE;&#x5E73;&#x5747;&#x5206;&#x53D1;&#x5230;<code>35.236.93.136:5000</code>&#x548C;<code>35.236.93.138:5001</code>&#x3002;</p>
+<p><strong>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x4E4B;&#x540E;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6216;&#x91CD;&#x542F;nginx&#x670D;&#x52A1;</strong></p>
+<blockquote>
+<p>&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x542B;&#x4E49;&#x53EF;&#x4EE5;&#x53C2;&#x8003;</p>
+<ul>
+<li><a href="https://blog.csdn.net/chenweijiSun/article/details/70823482" target="_blank">https://blog.csdn.net/chenweijiSun/article/details/70823482</a></li>
+<li><a href="https://www.jianshu.com/p/cee15a00728b" target="_blank">https://www.jianshu.com/p/cee15a00728b</a></li>
+<li><a href="http://tengine.taobao.org/nginx_docs/cn/docs/" target="_blank">http://tengine.taobao.org/nginx_docs/cn/docs/</a></li>
+</ul>
+</blockquote>
+<h3 id="1-ubuntu"><a name="1-ubuntu" class="plugin-anchor" href="#1-ubuntu"><i class="fa fa-link" aria-hidden="true"></i></a>1) Ubuntu</h3>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;<code>/etc/nginx/</code>&#x76EE;&#x5F55;&#x4E2D;</li>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>include</code>&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5F15;&#x7528;&#x7684;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x4F4D;&#x7F6E;&#x3002;nginx/1.14.0 (Ubuntu)&#x7684;&#x4E3B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;<code>include /etc/nginx/sites-enabled/*;</code>&#x5C06;<code>/etc/nginx/sites-enabled/</code>&#x76EE;&#x5F55;&#x4E0B;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5F15;&#x5165;&#xFF0C;&#x6B64;&#x76EE;&#x5F55;&#x4E0B;&#x9ED8;&#x8BA4;&#x53EA;&#x6709;<code>default</code>&#x6587;&#x4EF6;&#xFF0C;&#x6B64;&#x6587;&#x4EF6;&#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x94FE;&#x63A5;&#x6307;&#x5411;<code>/etc/nginx/sites-available/default</code>&#x3002;<code>/etc/nginx/sites-available/default</code>&#x6B64;&#x6587;&#x4EF6;&#x662F;nginx&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+</ul>
+<h3 id="2-mac-os"><a name="2-mac-os" class="plugin-anchor" href="#2-mac-os"><i class="fa fa-link" aria-hidden="true"></i></a>2) mac OS</h3>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;<code>/usr/local/etc/nginx/</code>&#x76EE;&#x5F55;&#x4E2D;</li>
+<li>mac&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>brew uninstall nginx</code>&#x5378;&#x8F7D;nginx&#xFF0C;&#x4F46;&#x4F1A;&#x6709;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7B49;&#x9057;&#x7559;&#x6587;&#x4EF6;&#x5BFC;&#x81F4;&#x91CD;&#x88C5;&#x540E;&#x5B58;&#x5728;&#x95EE;&#x9898;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>find /usr/local/ -name &quot;*nginx*&quot;</code>&#x547D;&#x4EE4;&#x67E5;&#x627E;&#x6240;&#x6709;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x5E76;&#x624B;&#x52A8;&#x6E05;&#x7406;&#x540E;&#x518D;&#x91CD;&#x88C5;&#x3002;</li>
+<li>mac&#x4E2D;&#x914D;&#x7F6E;nginx&#x82E5;&#x63D0;&#x793A;&#x67D0;&#x7CFB;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x9519;&#x8BEF;&#xFF0C;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x76F8;&#x5E94;&#x6587;&#x4EF6;&#x5373;&#x53EF;</li>
+</ul>
+<blockquote>
+<p>nginx&#x76F8;&#x5173;&#x547D;&#x4EE4;</p>
+</blockquote>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x542F;&#x52A8;</span>
+$ <span class="token function">sudo</span> nginx
+
+<span class="token comment"># &#x505C;&#x6B62;</span>
+$ <span class="token function">sudo</span> nginx -s stop
+
+<span class="token comment"># &#x9000;&#x51FA;</span>
+$ <span class="token function">sudo</span> nginx -s quit
+
+<span class="token comment"># &#x91CD;&#x542F;</span>
+$ <span class="token function">sudo</span> nginx -s reopen
+
+<span class="token comment"># &#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x914D;&#x7F6E;</span>
+$ <span class="token function">sudo</span> nginx -s reload
+</code></pre>
+<blockquote>
+<p>&#x82E5;&#x9700;&#x901A;&#x8FC7;&#x5916;&#x7F51;&#x8BBF;&#x95EE;nginx&#x9700;&#x8981;&#x5728;&#x670D;&#x52A1;&#x5668;&#x9632;&#x706B;&#x5899;&#x653E;&#x5F00;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;</p>
+</blockquote>
+<h2 id="3-&#x865A;&#x62DF;&#x4E3B;&#x673A;"><a name="3-&#x865A;&#x62DF;&#x4E3B;&#x673A;" class="plugin-anchor" href="#3-&#x865A;&#x62DF;&#x4E3B;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x865A;&#x62DF;&#x4E3B;&#x673A;</h2>
+<p>&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x8F6F;&#x786C;&#x4EF6;&#x6280;&#x672F;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5C06;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x4E00;&#x53F0;&#x7269;&#x7406;&#x4E3B;&#x673A;&#x5206;&#x6210;&#x591A;&#x4E2A;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#xFF0C;&#x6BCF;&#x4E2A;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;www&#x670D;&#x52A1;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x591A;&#x4E2A;Web&#x670D;&#x52A1;&#xFF0C;&#x6BCF;&#x4E2A;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x4E4B;&#x95F4;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#x3002;</p>
+<h3 id="31-&#x4E09;&#x79CD;&#x865A;&#x62DF;&#x4E3B;&#x673A;"><a name="31-&#x4E09;&#x79CD;&#x865A;&#x62DF;&#x4E3B;&#x673A;" class="plugin-anchor" href="#31-&#x4E09;&#x79CD;&#x865A;&#x62DF;&#x4E3B;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 &#x4E09;&#x79CD;&#x865A;&#x62DF;&#x4E3B;&#x673A;</h3>
+<h4 id="1-&#x57FA;&#x4E8E;ip&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#xFF0C;-&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;ip&#x5730;&#x5740;"><a name="1-&#x57FA;&#x4E8E;ip&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#xFF0C;-&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;ip&#x5730;&#x5740;" class="plugin-anchor" href="#1-&#x57FA;&#x4E8E;ip&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#xFF0C;-&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;ip&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>1) &#x57FA;&#x4E8E;ip&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#xFF0C; (&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;ip&#x5730;&#x5740;)</h4>
+<pre class="language-"><code class="lang-json">server<span class="token punctuation">{</span>
+  listen       <span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  localhost<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+server<span class="token punctuation">{</span>
+  listen       <span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.2</span><span class="token operator">:</span><span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  localhost<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="2-&#x57FA;&#x4E8E;&#x57DF;&#x540D;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;servername"><a name="2-&#x57FA;&#x4E8E;&#x57DF;&#x540D;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;servername" class="plugin-anchor" href="#2-&#x57FA;&#x4E8E;&#x57DF;&#x540D;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;servername"><i class="fa fa-link" aria-hidden="true"></i></a>2) &#x57FA;&#x4E8E;&#x57DF;&#x540D;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;(servername)</h4>
+<pre class="language-"><code class="lang-json">server<span class="token punctuation">{</span>
+  listen       <span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  www.nginx1.com www.nginx2.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+server<span class="token punctuation">{</span>
+  listen       <span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  www.nginx3.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="3-&#x57FA;&#x4E8E;&#x7AEF;&#x53E3;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;listen&#x4E0D;&#x5199;ip&#x7684;&#x7AEF;&#x53E3;&#x6A21;&#x5F0F;"><a name="3-&#x57FA;&#x4E8E;&#x7AEF;&#x53E3;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;listen&#x4E0D;&#x5199;ip&#x7684;&#x7AEF;&#x53E3;&#x6A21;&#x5F0F;" class="plugin-anchor" href="#3-&#x57FA;&#x4E8E;&#x7AEF;&#x53E3;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;listen&#x4E0D;&#x5199;ip&#x7684;&#x7AEF;&#x53E3;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>3) &#x57FA;&#x4E8E;&#x7AEF;&#x53E3;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;(listen&#x4E0D;&#x5199;ip&#x7684;&#x7AEF;&#x53E3;&#x6A21;&#x5F0F;)</h4>
+<pre class="language-"><code class="lang-json">server<span class="token punctuation">{</span>
+  listen       <span class="token number">80</span><span class="token punctuation">;</span>
+  server_name  localhost<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+server<span class="token punctuation">{</span>
+  listen       <span class="token number">81</span><span class="token punctuation">;</span>
+  server_name  localhost<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="32-&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;"><a name="32-&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;" class="plugin-anchor" href="#32-&#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 &#x9759;&#x6001;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</h3>
+<ul>
+<li>&#x4F7F;&#x7528;nginx&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x6280;&#x672F;&#x79D1;&#x6280;&#x5728;nginx&#x4E0A;&#x6302;&#x5728;&#x591A;&#x4E2A;Web&#x670D;&#x52A1;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;nginx&#x6302;&#x8F7D;&#x7F51;&#x7AD9;&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x6587;&#x4EF6;&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#x4E00;&#x822C;&#x901A;&#x8FC7;root&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x3002;Linux&#x4E2D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;<code>/var/www/html/</code>&#xFF0C;Mac&#x4E2D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;<code>html</code>&#x3002;</li>
+<li><strong>&#x5EFA;&#x8BAE;&#x5C06;&#x7F51;&#x7AD9;&#x6587;&#x4EF6;&#x653E;&#x5728;nginx&#x7684;root&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x6216;&#x5176;&#x5B50;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5176;&#x4ED6;&#x76EE;&#x5F55;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;nginx&#x65E0;&#x6743;&#x8BBF;&#x95EE;&#xFF0C;&#x9020;&#x6210;nginx&#x83AB;&#x540D;&#x51FA;&#x73B0;404&#x9519;&#x8BEF;</strong></li>
+</ul>
+<blockquote>
+<p>mac OS&#x4E2D;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x6587;&#x4EF6;&#x5B9A;&#x4F4D;</p>
+</blockquote>
+<p>mac OS&#x4E2D;nginx&#x914D;&#x7F6E;&#x5927;&#x591A;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x90FD;&#x662F;&#x76F8;&#x5BF9;&#x4E0E;nginx&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x5B9A;&#x4F4D;&#x6587;&#x4EF6;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x5B9A;&#x4F4D;nginx&#x7A0B;&#x5E8F;&#x8DEF;&#x5F84;</span>
+$ <span class="token function">which</span> nginx   <span class="token comment"># &#x8F93;&#x51FA; /usr/local/bin/nginx</span>
+
+<span class="token comment"># &#x5207;&#x6362;&#x5230;&#x7A0B;&#x5E8F;&#x76EE;&#x5F55;</span>
+$ <span class="token function">cd</span> /usr/local/bin/
+
+<span class="token comment"># &#x786E;&#x8BA4;nginx&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x4E3A;&#x8F6F;&#x94FE;&#x63A5;</span>
+$ <span class="token function">ls</span> -lh nginx   <span class="token comment"># &#x786E;&#x8BA4;&#x4E3A;&#x8F6F;&#x8F6F;&#x94FE;&#x63A5;&#xFF0C;&#x94FE;&#x63A5;&#x6307;&#x5411; ../Cellar/nginx/1.15.4/bin/nginx</span>
+
+<span class="token comment"># &#x5207;&#x6362;&#x5230;&#x94FE;&#x63A5;&#x76EE;&#x5F55;&#xB7;</span>
+$ <span class="token function">cd</span> <span class="token punctuation">..</span>/Cellar/nginx/1.15.4/bin/    <span class="token comment"># &#x6B64;&#x4E3A;nginx&#x7A0B;&#x5E8F;&#x771F;&#x6B63;&#x76EE;&#x5F55;</span>
+
+<span class="token comment"># &#x67E5;&#x770B;nginx&#x5F53;&#x524D;&#x7248;&#x672C;&#x76EE;&#x5F55;</span>
+$ <span class="token function">cd</span> <span class="token punctuation">..</span>     <span class="token comment"># &#x5207;&#x6362;&#x5230;nginx&#x5F53;&#x524D;&#x7248;&#x672C;&#x76EE;&#x5F55;</span>
+$ <span class="token function">ls</span> -lh    <span class="token comment"># &#x627E;&#x5230;root&#x4E2D;&#x4F7F;&#x7528;&#x7684;html&#x76EE;&#x5F55;&#xFF0C;html&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x94FE;&#x63A5;&#xFF0C;&#x94FE;&#x63A5;&#x6307;&#x5411; ../../../var/www</span>
+
+<span class="token comment"># &#x5207;&#x6362;&#x5230;&#x94FE;&#x63A5;&#x76EE;&#x5F55;</span>
+$ <span class="token function">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>/<span class="token punctuation">..</span>/var/www
+
+<span class="token comment"># &#x8F93;&#x51FA;&#x6700;&#x7EC8;&#x7F51;&#x7AD9;&#x6587;&#x4EF6;&#x76EE;&#x5F55;</span>
+$ <span class="token function">pwd</span>   <span class="token comment"># /usr/local/var/www</span>
+</code></pre>
+<p>mac OS&#x4E2D;&#x914D;&#x7F6E;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x591A;&#x5C42;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x548C;&#x8F6F;&#x8FDE;&#x63A5;&#xFF0C;&#x5BFC;&#x81F4;&#x5B9A;&#x4F4D;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#x5341;&#x5206;&#x7E41;&#x7410;&#xFF0C;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;Linux&#x4E2D;&#x914D;&#x7F6E;&#x8981;&#x7B80;&#x5355;&#x8BB8;&#x591A;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">&#xA9; Colin Chang all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-07 22:25:02
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql.html" class="navigation navigation-prev " aria-label="Previous page: 2. MySQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gui.html" class="navigation navigation-next " aria-label="Next page: 4. 界面系统">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Nginx","level":"3.3","depth":1,"next":{"title":"4. 界面系统","level":"3.4","depth":1,"path":"part2/gui.md","ref":"part2/gui.md","articles":[]},"previous":{"title":"2. MySQL","level":"3.2","depth":1,"path":"part2/mysql.md","ref":"part2/mysql.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus","advanced-emoji","github","multipart","katex","splitter","tbfed-pagefooter","anchors","favicon","sitemap","copy-code-button","-sharing","toggle-chapters","book-summary-scroll-position-saver","prism","-highlight","livereload"],"styles":{"website":"website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Colin Chang","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"Idea"},"github":{"url":"https://github.com/colin-chang/linux"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"multipart":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"sitemap":{"hostname":"http://colin-chang.site/book/linux/"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Linux-运维之美","gitbook":"*","description":"Linux—流行的服务器操作系统"},"file":{"path":"part2/nginx.md","mtime":"2018-12-07T14:25:02.469Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T11:46:16.381Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
