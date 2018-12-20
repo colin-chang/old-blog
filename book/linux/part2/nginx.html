@@ -600,7 +600,7 @@ server <span class="token punctuation">{</span>
         proxy_pass         http<span class="token operator">:</span>//proxygroup<span class="token punctuation">;</span>
         proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
         proxy_set_header   Upgrade $http_upgrade<span class="token punctuation">;</span>
-        proxy_set_header   Connection keep-alive<span class="token punctuation">;</span>
+        proxy_set_header   Connection "upgrade"<span class="token punctuation">;</span>
         proxy_set_header   Host $host<span class="token punctuation">;</span>
         proxy_cache_bypass $http_upgrade<span class="token punctuation">;</span>
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for<span class="token punctuation">;</span>
